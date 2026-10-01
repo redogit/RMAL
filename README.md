@@ -1,2 +1,2 @@
 RMA-PROGRAMMING-LANGUAGE.- my
-programming languag. 
+programming language. 
