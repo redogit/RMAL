@@ -1,0 +1,1468 @@
+{
+  "schema": "scoped-repository-export/v1",
+  "workspace": "rmal",
+  "status": "candidate-not-cleared-for-publication",
+  "source_history": "Original checkouts and commits retained unchanged; this is a scoped snapshot, not rewritten history.",
+  "scope": {
+    "id": "rmal",
+    "name": "RMAL",
+    "purpose": "Language, compiler, native integrations, and existing RMAL project modules",
+    "repositories": [
+      "DnD"
+    ],
+    "source_roots": [
+      "DnD/include",
+      "DnD/src",
+      "DnD/spec",
+      "DnD/projects"
+    ],
+    "entry_points": [
+      "DnD/README.md",
+      "DnD/CURRENT.md",
+      "DnD/README_COMPILER.md",
+      "DnD/projects/README.md"
+    ],
+    "organization_action": "Create entry points outside DnD; reference existing paths without changing its contents",
+    "workspace_directory": "redogit/workspaces/rmal"
+  },
+  "files": [
+    {
+      "path": "DnD/CURRENT.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "24d38b10e76fd59c9b79268a995dbcb01899b120",
+      "mode": "100644",
+      "sha256": "0811af26b8a880a5bb227128f47c6f2ec3cb2b84d484aa64b7dc0191858f24ae"
+    },
+    {
+      "path": "DnD/README.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "f0a2c2f7c1ef8efc084577e6e97763e48660225a",
+      "mode": "100644",
+      "sha256": "e42466787500d24acf591b508395ec87b193c299e849a9c9b35c14b515b0e7fd"
+    },
+    {
+      "path": "DnD/README_COMPILER.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "234c64a1dcb8338d75b76e4906e576abf7bc9c45",
+      "mode": "100644",
+      "sha256": "9c3fd0245ccaa5ff9eafadbac0cf1a236b9e4b529f5a64aa640ffdb36cf3a6fb"
+    },
+    {
+      "path": "DnD/include/rmal/rmal.h",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "7f4c8dd9092eaaeb533bedba402902f16054c8c9",
+      "mode": "100644",
+      "sha256": "9268d3036acd72297113adf2ab8dcd3ba0883eb31337abe75b7d7f8b69a95a22"
+    },
+    {
+      "path": "DnD/projects/README.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "ffbe5f209e15e49a55aa7ab68b649dec9b0729a8",
+      "mode": "100644",
+      "sha256": "1a028dfdc18f80cd3fa6dfe006f83590aa27739b97f5eba9903faeba056764f7"
+    },
+    {
+      "path": "DnD/projects/decision-field/CMakeLists.txt",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "0a5eea027981ef4d5a53ac00e0eb6f5100b3f9ce",
+      "mode": "100644",
+      "sha256": "4968993cc3853971c2cb9771df79eaeffe54b5e4d8e800cfbec55d28c2eb2993"
+    },
+    {
+      "path": "DnD/projects/decision-field/CURRENT.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "d431f35b1c172705bca2d4067a6d4dd5bc9731b9",
+      "mode": "100644",
+      "sha256": "7f282f0076566884d395e90d5932fefab0e790bd2a6eed1a648fc17d531e9b25"
+    },
+    {
+      "path": "DnD/projects/decision-field/README.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "afe71b7263735de868c60e9d04d23156c1b8fdd9",
+      "mode": "100644",
+      "sha256": "2b0688d986c73b0db54d52259e47a654223b81d32da43d5864e7d150592a9c0f"
+    },
+    {
+      "path": "DnD/projects/decision-field/docs/ANYFUNCTOR_STRUCTURAL_RECONCILIATION_2026-09-29.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "08283af880f6643f4a0a36cbec0b54dd6abbef83",
+      "mode": "100644",
+      "sha256": "d1976de254dbe641e5fdc2f3fa2cea38e8ab76ff24014e47e70723f457616fbc"
+    },
+    {
+      "path": "DnD/projects/decision-field/docs/DEFINITIONS.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "d3f437edf1ebd991f678098b76e2aec3d0c08949",
+      "mode": "100644",
+      "sha256": "dea18ff3429cf7a5a15614ef9ff0408bc698d63ff89bbf68880002c50b2173fe"
+    },
+    {
+      "path": "DnD/projects/decision-field/docs/DESIGN.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "a9e2c5db013eee98f0c7b50b6eb1dbca0292a63a",
+      "mode": "100644",
+      "sha256": "054f2c75ba83c9dbdddfbd7e7aeb32c1172b8ffa7748557db6688e00c02fbd14"
+    },
+    {
+      "path": "DnD/projects/decision-field/docs/MIRROR_RMAL_HOMEWARD.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "47b9b76bb07202147c3b165882c94b54fcd58256",
+      "mode": "100644",
+      "sha256": "5c29e62f0c7384d1abbcd453d31897f76838d8cd0e89148b75a1cb3c4e6b850b"
+    },
+    {
+      "path": "DnD/projects/decision-field/docs/NATIVE_PERSISTENCE.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "e8482e1ebe52ca7bb7f7631b11a9e5a607358529",
+      "mode": "100644",
+      "sha256": "21c634196285d22334cd12e011e237b3c4dbb9ed5fa5e235dc42c0871be3ebf9"
+    },
+    {
+      "path": "DnD/projects/decision-field/docs/RECOVERABLE_CORE_REPLAY.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "45ed7c0f0bfa2ba19141a96a5d81305e3cd7ce2b",
+      "mode": "100644",
+      "sha256": "908fc143dbe15bc06789f0d71bd6bd312cda069aec0a72453c582b5aa887feaa"
+    },
+    {
+      "path": "DnD/projects/decision-field/docs/SEMANTIC_CROSS_REFERENCE.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "05d5b458c862fe76369547676c88117b328d2dfe",
+      "mode": "100644",
+      "sha256": "1ee845b15516f9669363d6871d5ea9abf75540882d85987180db78e6d5f01d8d"
+    },
+    {
+      "path": "DnD/projects/decision-field/docs/plans/2026-09-27-directional-component-analysis.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "74f5a92160331d06ca58863cc22f59f7d50d944d",
+      "mode": "100644",
+      "sha256": "54e6c9131d7a49d535eb57ad30a94f0f8231dce3d1ea68119116ae4cc26ee7ab"
+    },
+    {
+      "path": "DnD/projects/decision-field/docs/plans/2026-09-27-native-persistence.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "856224677e3f03b0ee6e2f92e435eb46da8dd06c",
+      "mode": "100644",
+      "sha256": "b661d20da6e12a22a8134dc250383992cc83ca722c9142295d4c9c7bab267019"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/ADJACENT_IDEAS.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "e0e0f9c9eff8280c7766f2782513a31a7242256d",
+      "mode": "100644",
+      "sha256": "deed9bbca8acc28b3f7db8919c93cb4d813155217d4569076adbf4620ddec9e7"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/BUILD_REPORT.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "85ecd7da6eb04ca3800306b291886a630399e7ce",
+      "mode": "100644",
+      "sha256": "119efea1f50ae6344d4619aa830c15ca22d9b5fc175c53cb539ca4a864627f9a"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/CONVERSATION_STRATEGIC_INPUTS.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "9c35f3be89085f0e016be204b7c7231f0c792b39",
+      "mode": "100644",
+      "sha256": "7159a44db837c1ba0fc2020da1c919a8764fa84709150ca8d60dffb662fd0a9c"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/REVIEW.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "eebda0d7b8d7ac7752c912e532bcd4fa91852ca7",
+      "mode": "100644",
+      "sha256": "b74d1a57970744b3ce3cb2b18e379bb2722e0e8d2f020894f4008c0b751c7f5b"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/SELF_OPPOSITE_REPORT.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "cb5584b115bfdef7674ec10e1c7afe8318267bb6",
+      "mode": "100644",
+      "sha256": "942dda332c952b87fa34ea768027e7e30577467ffe5cb86d27a710932882cace"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/SELF_OPPOSITE_RUN.txt",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "8783cc601bab3e931a7b7446a6d87fef7235dc72",
+      "mode": "100644",
+      "sha256": "96ea70d11ed84c368e3d99126620227dccb825a211d171f792ad30dadbbbba3f"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/TRIADIC_SELF_ATTACK_REPORT.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "5b7fd1c0e8123a76753354ca6dd3381c1d13f699",
+      "mode": "100644",
+      "sha256": "59f2b2e6fcd876ef9c06be1e69de723e9d7e329fc0ad800bbc931ffb8a0558de"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/TRIADIC_SELF_ATTACK_RUN.txt",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "8f937e2cb1c4477d5bbc43747d3871fb619da011",
+      "mode": "100644",
+      "sha256": "a96e039d9641ea6e3313500c6ec1c1621eba84d44cb3731173ec365b615662dd"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_5/IMPLEMENTATION_LEDGER.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "ef3fdc42e5a027b638166dd6fa5e7e81c8108f06",
+      "mode": "100644",
+      "sha256": "daaf3a20ce9ee8a014289193c818421a0e90cb1effad704e7b05ca430814580b"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_5/RECOVERY.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "e8df76dd361477f6ed208b711cd768f7317f4887",
+      "mode": "100644",
+      "sha256": "c0505970050bee9d17a5108bc2ed70e984f2681e8fabe78c12be6a1c491cc8ea"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_5/REVIEW.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "b567404fc9cdb769bbdab0a705eb847d5584394a",
+      "mode": "100644",
+      "sha256": "81d5c854d188dc05934c675081faf7848c7dc810d52530f93bec6f768cd31aae"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_5/RUN_LOG.txt",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "227d1d3de852976b0309d3a54052d3a497fba1b3",
+      "mode": "100644",
+      "sha256": "39e88008d039a3884dbcda4c449d7a171e9bb54777f438e9f0c5a8861e23e401"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_5/SOURCE_MANIFEST.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "2635bc6c4b3e49b2bdebf6aec7d7445ba2e58b88",
+      "mode": "100644",
+      "sha256": "5ca8a958eceabb5e636447888e57299fc6f6b8e51a99ae316cec2c060f8b5f25"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_5/VERIFICATION.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "f4bee3f8041d47107dbebe34c84cb40238ce29e2",
+      "mode": "100644",
+      "sha256": "3824cbbdeb3565d967029f716e1f01af18fad15e69d5a051f4de24910d6e68b2"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_6/IMPLEMENTATION_LEDGER.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "73ae99062d19c43fc0d14067443efb85f357510e",
+      "mode": "100644",
+      "sha256": "6fa148812e95e403d92964e510e467a4980cc8b0c6534b1affc5da2f6893d6ac"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_6/REMOTE_SOURCE_CHECK.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "4ad6b988a48f62a4df4526c616548a5ffa80a978",
+      "mode": "100644",
+      "sha256": "e2347fbbb9be955fabe364fcddd8cf63a156a7733f38cd53f2f21f08676f4862"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_6/REVIEW.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "f8b3cdc151a90e73f550e55e108129c51fc3d6a3",
+      "mode": "100644",
+      "sha256": "16f3e42fcadc6795d0648c3efc14b66893e71d89f32c66d5d4aaf6408b3f4719"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_6/SOURCE_MANIFEST.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "a3812a7dc4f82f7e6f379e766e31dadd0dc1b916",
+      "mode": "100644",
+      "sha256": "94a7b3b83cf5531f50f2927cf8cc12efc8bc0b14f3df0cbd71c3f622bbd0bc21"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_6/VERIFICATION.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "fa44a8321723dd1b3c9bf1279310cb08826183a9",
+      "mode": "100644",
+      "sha256": "ecca43bf0452459dc13ad9a198ce3ffb3a3384c27620bbc234580d816f8b6618"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_6/cache_key_RED.txt",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "f8df32133f566c30b802f55cb276117c8ca9c976",
+      "mode": "100644",
+      "sha256": "b745c0d69b1a75c3ee0876fc5c17b153958d655710dd980490d33e1d643cc6d2"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_6/final_archive_RUN.txt",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "6a95efedfe17f287620044e29387d78c97e2667c",
+      "mode": "100644",
+      "sha256": "560702f8118d861b945eb5e92644014947fd3e0909ea29730b8595848689ac1a"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_6/final_debug_CTEST.txt",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "b057a68d91dd1790605dbb336f3d390d39e92b06",
+      "mode": "100644",
+      "sha256": "b518dc648035af5e6dee9d6a731e535c2399874b11a20a763b4c297706180eff"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_6/final_process_HANDOFF.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "7d1e5fc964631c947c36e7ad65520657d2ff62e1",
+      "mode": "100644",
+      "sha256": "7a6c57fb54ba14043b72c79615fc7e08b2d7dd63fe4e06978c4ef3a54e1e6f7f"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_7/PROCESS_RECEIPT.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "2b0ea9a90c8020cba2701a4bde43a269d7367aea",
+      "mode": "100644",
+      "sha256": "44b054903b40ccfc1d1e0af2c7b9fe8d4e6d680b3fe23abffdc04d08581e151f"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_7/REVIEW.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "f487ce827f5414ef46b39413f5a0adea0ea6b0eb",
+      "mode": "100644",
+      "sha256": "610cd831dd3f77435a736e687b534230ea87fe4403e6a97826dadef4f0ad5b09"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_7/SOURCE_MANIFEST.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "6bd803597b56b6766c9fa63aea1d9cb3ea7dc093",
+      "mode": "100644",
+      "sha256": "d89823b8546e347f08c12a34deafeda7357f47e782f556693dd7d2cbadbd77b3"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_7/VERIFICATION.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "b1451a36a384802271781cd46cc992c6fd7b5ba8",
+      "mode": "100644",
+      "sha256": "e8a7377ccc39dfe7631dc33a3cfc0f57ab266a84d8ac1062b84f8336260d0b30"
+    },
+    {
+      "path": "DnD/projects/decision-field/examples/mirror_homeward.rmal",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "77b6625e02699ff26cd53fde1b501d038fb94a02",
+      "mode": "100644",
+      "sha256": "3f11055505d3adf450d737f854d587b1c43ab331eea61475c049eaf20c7518a8"
+    },
+    {
+      "path": "DnD/projects/decision-field/include/decision_field/anyfunctor_mirror.hpp",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "2a87498d659de2a3ba279bd37e6e8d40d2a010e3",
+      "mode": "100644",
+      "sha256": "aea30f3615f929c774a075413f02545c7c93ba768b2d2bc407c0a8ba611eff42"
+    },
+    {
+      "path": "DnD/projects/decision-field/include/decision_field/checkpoint_file.hpp",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "cea6c3233e4e381512ebc907446d5697cd20f154",
+      "mode": "100644",
+      "sha256": "0207890352ddce64e28d12bf242363a844a7a04f47de4a130fe1094ed53c558a"
+    },
+    {
+      "path": "DnD/projects/decision-field/include/decision_field/component_adapter.hpp",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "6540ab374ac62d466006b3c2af86ac3befed2c81",
+      "mode": "100644",
+      "sha256": "61fbba7feaaad4c31a8506f8803cdf38f4f5f4dc629117e1832e54f6bc7efefa"
+    },
+    {
+      "path": "DnD/projects/decision-field/include/decision_field/component_analysis.hpp",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "e01f7f17acca791b15fdd7dab0073b2d0eff61bc",
+      "mode": "100644",
+      "sha256": "bed6ab4fd84082f38434608b3ca1800e49e201bb73febb00e7953a6a6d498849"
+    },
+    {
+      "path": "DnD/projects/decision-field/include/decision_field/core_replay.hpp",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "70123f885828976b8f1dcbd3492d20e6e07276b7",
+      "mode": "100644",
+      "sha256": "29691d43ba45e87dcec3cf759dbfe5e5cf912d432bced518aaf29e22c61fcbaa"
+    },
+    {
+      "path": "DnD/projects/decision-field/include/decision_field/detail/checkpoint_methods.inc",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "1c55d4c61171214b957573981a81a69202a0f91b",
+      "mode": "100644",
+      "sha256": "f61a8148e7de7c0cab7c590493da131d22e661c57f033a077da3731d7610f261"
+    },
+    {
+      "path": "DnD/projects/decision-field/include/decision_field/detail/checkpoint_types.inc",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "f7b474d76c7423faf0258efb0b8e5b7f9e5f3810",
+      "mode": "100644",
+      "sha256": "ddddbceac5dd42865335f6b37252b62b7f7f18815f20faae2ce9e32676f2409f"
+    },
+    {
+      "path": "DnD/projects/decision-field/include/decision_field/detail/function_accessors.inc",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "e34ffdb8bb29b1759ae0200dd1216b96f8c7e6af",
+      "mode": "100644",
+      "sha256": "a24fd696cb2112c9cefd1058b49871fc69970579cc9c0b718cfa7a322866b94c"
+    },
+    {
+      "path": "DnD/projects/decision-field/include/decision_field/native_archive.hpp",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "51fa65da2a34a17ad2d1ebd59fd319f5d10663b9",
+      "mode": "100644",
+      "sha256": "fdddc5cdad1a79791d89c98774bf5cbe49f87ef4edd340922d3d56bc144c5d6e"
+    },
+    {
+      "path": "DnD/projects/decision-field/include/decision_field/rmal_mirror_host.hpp",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "573756df1dcb5656d3efeda615ef5215fb404d20",
+      "mode": "100644",
+      "sha256": "3fba94da88e17f602fa98c368221c942474142b380642caac95cc99198c4c5aa"
+    },
+    {
+      "path": "DnD/projects/decision-field/include/decision_field/self_state_codec.hpp",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "b4beda00187fc72ea39345ef7f00970d6829945d",
+      "mode": "100644",
+      "sha256": "0a382f639ff72859ac92e49d7ca7d0792f0182741a03be3ecc1d7f89e4b04de4"
+    },
+    {
+      "path": "DnD/projects/decision-field/include/decision_field/surface_component_analysis.hpp",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "065c56ca6b4772648bfb8e43750fd649311afc14",
+      "mode": "100644",
+      "sha256": "10adb40f6e23ce71f3d9625a6245ea08ddfda15d73189fe633c0b323595bc52a"
+    },
+    {
+      "path": "DnD/projects/decision-field/instructions/OPERATING_PROTOCOL.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "20bbc4ad657bd27c5763a92f2b1102cf4764f807",
+      "mode": "100644",
+      "sha256": "ef9970231b322c2fa7d2cf6467f27ab0f1953e42eccd061b1eba28efde623aa6"
+    },
+    {
+      "path": "DnD/projects/decision-field/provenance/SOURCE_MANIFEST.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "e8e1c7885db3b7c904f7121373e596a0aeebbdd4",
+      "mode": "100644",
+      "sha256": "ad4767a2eeae42346b0dd7f34be697a215ac67751e4dd91d8d23d8abbc7a7188"
+    },
+    {
+      "path": "DnD/projects/decision-field/scripts/check_mirror_manifest.py",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "5af7e02b8a57c0edb4f8c6b74fea8dbadfc7e427",
+      "mode": "100644",
+      "sha256": "cbe1db9a178942d23d18ba3a101799d48787f6675a200144b08a6e9655a70ea1"
+    },
+    {
+      "path": "DnD/projects/decision-field/scripts/prepare_native_engine.py",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "bc3d47afa6e036ff2cb42e804c0e87d664b4eaeb",
+      "mode": "100644",
+      "sha256": "110844bcf4657ec7f388edc55b840cdcb5274bd8ad654c12f41ff2680dbbb6fd"
+    },
+    {
+      "path": "DnD/projects/decision-field/scripts/recover_predecessor.py",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "28867444f8fcad187af63dac0123187bf7b0ba95",
+      "mode": "100644",
+      "sha256": "99632563f6c2a434810acd3f28e21a5b755f018dd4555736772a3c94299b79d4"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/anyfunctor_mirror_tests.cpp",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "b33a36a56f532c50b999a32c795fc40e0caaa4e5",
+      "mode": "100644",
+      "sha256": "cf24637c8c9696678d60ec15ec341862b171550fa5bc604d0a9115d956702917"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/bridge_tests.cpp",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "0ecd2a1570fffb8e4d87bd4fde83440952676e0d",
+      "mode": "100644",
+      "sha256": "a86e097e1dcf990cd09b3da515b34d98668ae67330c1f106571d8c56f44be819"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/checkpoint_file_tests.cpp",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "7dac9597d7803549df3efecc2f455ec6c83cc1d6",
+      "mode": "100644",
+      "sha256": "7261b401e5b756a8ff4e469f93c364315a35b7681ac8d5f4499e4fc95a29252e"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/checkpoint_process.cpp",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "022d22811d47ee8df0aa960599b1d478c9714f7a",
+      "mode": "100644",
+      "sha256": "02c2929700a03c609e109784dbda599b5444a1dc317e14e3afd0c5627375c935"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/checkpoint_process_test.py",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "7a2e585e2fb8f222886341289017cedc258b04fa",
+      "mode": "100644",
+      "sha256": "dabd5fc2d760d07722f94f9ec64e6eb532d6fc895eecb2b675a6696e051b832c"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/component_analysis_tests.cpp",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "31370cc4afc482155c685098916c8b7ad67e0e7e",
+      "mode": "100644",
+      "sha256": "43a1602df388a12db2ea410ba9e571480e81a63dca40f07f275f3bc2862e4cda"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/core_coverage_tests.cpp",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "1e0cb822ca1d5d42ff48b152ca0a122dc61a0a82",
+      "mode": "100644",
+      "sha256": "e03d6b4b4788689ca51e17d69e836f5ee8d71d408cead791141d01fe1da45096"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/native_archive_tests.cpp",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "3cb8de4cf9566d16c2841806a11f1b628ecdc56a",
+      "mode": "100644",
+      "sha256": "d38bfaf645347b8b1b089af777376d8a6480dbc190369eaa14d85d69b11efea1"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/native_snapshot_tests.cpp",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "540407376067caeca79df0d14001217476bce456",
+      "mode": "100644",
+      "sha256": "e22a69cb03c4a85f9a9f863593923655e66cbdda633f8325a23fad9a4f765656"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/predecessor_bridge_tests.cpp",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "670f13f33b51ff5ec08dd3c71accc0c340a88c45",
+      "mode": "100644",
+      "sha256": "9f142f3912f573fc9e4350130963adaf5d6e054fb2a88851756efff900e72803"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/replay_integrity_tests.cpp",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "45acc31ab5d283f359fd0afe853f4450017b2505",
+      "mode": "100644",
+      "sha256": "06b1db510bb73cb07cddce5157ea276145b17e4343a0887f61fe4c09fbb5070a"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/rmal_mirror_process.cpp",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "05bad9a62cfd1df7896b59fe3f07a18d05a614f9",
+      "mode": "100644",
+      "sha256": "60d74af094d8382bc658b352ca872694791dac931baeda602efd472e934b832b"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/rmal_mirror_process_test.py",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "47428e1329fc26c6848d84c1b38ec8e215daa31b",
+      "mode": "100644",
+      "sha256": "2ecde90f156fc3ccb3fb3a48b7fd477ec6401d096bc9ab06a685ddc44cd2c931"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/rmal_mirror_tests.cpp",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "f771fa9e3d12161eed40e1eff941e9b8f862b7c8",
+      "mode": "100644",
+      "sha256": "fd972cb809fd3aa15baba6bdb97591c5cc0853ce4a088e8f0e490ec2d5c6312b"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/surface_bridge_tests.cpp",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "8b81f95a6d3602ce159dda7e04f95f50f26b3303",
+      "mode": "100644",
+      "sha256": "6801cb0e06ef2f93e9b2f61a3d76707d7ceb67cdb2031155d591980841b1a9ca"
+    },
+    {
+      "path": "DnD/projects/origami-g002/README.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "e3efc780ae938b9c0728a0e526f3e6f599a99573",
+      "mode": "100644",
+      "sha256": "8fc2ec746e4402ef9c7444e0714edf62abbe8add6fa75037cca28f46b755cd75"
+    },
+    {
+      "path": "DnD/projects/origami-g002/SOURCE_MANIFEST.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "07b5909e65ec7a55c4e1aa6ae0703e066d668311",
+      "mode": "100644",
+      "sha256": "3274f8c618cfe5346326b8c999a0ca810710ada264a78e1a57ebde57f84e1ae2"
+    },
+    {
+      "path": "DnD/projects/origami-g002/data/RUN_SOURCE.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "ab9d42dab455feadf6d82513a6d41f1ff001ca9c",
+      "mode": "100644",
+      "sha256": "0fd58542b9a56f37e94d29f16d05fd848cc10712675db64f1e27c2eea1d0ff62"
+    },
+    {
+      "path": "DnD/projects/origami-g002/data/SOURCE.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "77b1a5dde946f4ad6b0006174863c38d327b332f",
+      "mode": "100644",
+      "sha256": "08591be70a177b0c14ea91311cee65772a45794d7ecec12aa5fae58e18c980d5"
+    },
+    {
+      "path": "DnD/projects/origami-g002/data/approved-composite.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "c1bd794585a5d223066c7c818c6b7371dbda346b",
+      "mode": "100644",
+      "sha256": "ef1253042492d2b07969edee47a8bcba14a33a5bd9932ef0d398e722a1dc35e5"
+    },
+    {
+      "path": "DnD/projects/origami-g002/data/google-chart-3.vegalite.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "20f3a2ec13399a625607bd87e413e564a4efec3e",
+      "mode": "100644",
+      "sha256": "c6490842a324397528fd35dc9e83a599458b52dcb39dad57b160f6da6266e213"
+    },
+    {
+      "path": "DnD/projects/origami-g002/data/google-chart-4.vegalite.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "7994ae29e99c8fb2799673d1048a03a01cc6eb4e",
+      "mode": "100644",
+      "sha256": "761048e306447c6cf4616ce031de1b88431c4f06592bfc21eef75ad7179ef9b6"
+    },
+    {
+      "path": "DnD/projects/origami-g002/docs/ACTIVE_DIRECTION.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "552467a0c8a55fb40b4f1dc5e30d9ee3bb99b755",
+      "mode": "100644",
+      "sha256": "799004f6c8dd9b9ad353faf1c06f7c0ed81073e129915ebb28e04e2b176c772b"
+    },
+    {
+      "path": "DnD/projects/origami-g002/docs/CENTRE_CONTRACT.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "756a4f0cdfd0f0ae6f47507cba0ba2981126fd23",
+      "mode": "100644",
+      "sha256": "5d1443d86bdf5c258ab997be139727454a8d08f4ec7f7a7f9afd2c42bae7ec31"
+    },
+    {
+      "path": "DnD/projects/origami-g002/docs/CENTRE_RUN_CONTRACT.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "9bae5ca36506ff7f779246b55daadb06b1599f0c",
+      "mode": "100644",
+      "sha256": "7415d50152830646e6eceb8cf704bbb4ce87baacfe857931839d774c42f84a25"
+    },
+    {
+      "path": "DnD/projects/origami-g002/evidence/LOCAL_RECHECK_2026-09-29.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "666405e02aaca275ddcba93b823648247c05a478",
+      "mode": "100644",
+      "sha256": "2efda2262271b675ee5e496dd34819833a8d33ce12694e4f904fa9b70dbd0aa0"
+    },
+    {
+      "path": "DnD/projects/origami-g002/evidence/runner-demo.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "6925378e7de76bd1685e6f861c530c6dbbb1e888",
+      "mode": "100644",
+      "sha256": "cfce5aa9983c38d959d651dc73a7f1b514de6cade3f669c17b2902107c99baf7"
+    },
+    {
+      "path": "DnD/projects/origami-g002/examples/centering-run.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "9dcaff0019c04d912403a9a8fd1dc12abfc34abc",
+      "mode": "100644",
+      "sha256": "b51318632d6b1061a67571ebecf42ec923ddfd445fc70da416b0037d61f83c57"
+    },
+    {
+      "path": "DnD/projects/origami-g002/examples/centering.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "875be3a6fb864f480683a559afb6c662ecc5dce6",
+      "mode": "100644",
+      "sha256": "6f1ac3e7ced05c2416dcf77442c57ac979f539ccaa5f03511a9c2b188064b065"
+    },
+    {
+      "path": "DnD/projects/origami-g002/examples/decisions.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "67c67f5f6c52148d1f7d83e68052dec11169bd0c",
+      "mode": "100644",
+      "sha256": "d3b6bde9bb64f207bbb8cd01393f7a3e48575dbda0c79f55ecb0cc0f0aaa5311"
+    },
+    {
+      "path": "DnD/projects/origami-g002/examples/encode.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "fc9923986ba265c316485940ddc684c8ad47699b",
+      "mode": "100644",
+      "sha256": "b430fd681cfa14185de89221c329c4496b975bb15626a4a1295b475b99ac7458"
+    },
+    {
+      "path": "DnD/projects/origami-g002/examples/geometry.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "2681cfa9e3aef5f14e6ce95b4b5e1fb44d50856d",
+      "mode": "100644",
+      "sha256": "047f4b64202c345ee0a1c22dd3221517f3b43ac077cc96ee2449a62714056662"
+    },
+    {
+      "path": "DnD/projects/origami-g002/examples/homeward.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "2fe28b9b746e7d4a41abfb2066d28fa398362b69",
+      "mode": "100644",
+      "sha256": "9ddf0fb3327f202ce842fc5ccf44e531819c607f2b105bb16125cdb1a321028b"
+    },
+    {
+      "path": "DnD/projects/origami-g002/examples/rf.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "a9c2296c19adc25d6c727286e89db37dc6b776f6",
+      "mode": "100644",
+      "sha256": "1d66c827048821f932fdf94e8d6efe5ee45725df986530c81fa1c95bdfcce974"
+    },
+    {
+      "path": "DnD/projects/origami-g002/examples/simulation.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "496a9d74265fa8164fd1f42af4a9e2a05e88ed5b",
+      "mode": "100644",
+      "sha256": "0be2de45f46658e751b0cf741c1a4eb26d106215dca06c8bd065244b85caf296"
+    },
+    {
+      "path": "DnD/projects/origami-g002/history/INTERPRETATION_ERRORS.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "3770d323a709732878a7df1efbe9f1982cd2f803",
+      "mode": "100644",
+      "sha256": "cf4d3d1374c6ccf9d202f20da2b0615c7ae6a8942e73ae63ae29bc570fcd102c"
+    },
+    {
+      "path": "DnD/projects/origami-g002/native/README.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "3fab48dbfa57eaa6f97f64787179c899f74fa595",
+      "mode": "100644",
+      "sha256": "16613de417748c154f382927325b726da45446a331e1eb44425bba8aecedd878"
+    },
+    {
+      "path": "DnD/projects/origami-g002/native/main.c",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "8559e0cf9b3d5b13edd905d7c55095297c79d37d",
+      "mode": "100644",
+      "sha256": "228af9980d263f0484f87cd028471264feef4e1ed23cc68f89535656274e56d7"
+    },
+    {
+      "path": "DnD/projects/origami-g002/native/origami_program.h",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "78594dc63fafc119ff5904ba8e474c2b7ed50ca4",
+      "mode": "100644",
+      "sha256": "8bb7cbd56ecee51dce9f2a50aa4e3daddfe6227beb3ec62ea73623705195dd41"
+    },
+    {
+      "path": "DnD/projects/origami-g002/native/test_host.py",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "29c3fc1a9cc80230126eececf74b0554e3673998",
+      "mode": "100644",
+      "sha256": "a5174702e2a69a4f00bafa57a17d049ab017e4ca45b41bb41cac3f805e78f285"
+    },
+    {
+      "path": "DnD/projects/origami-g002/program/centering.rmal",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "35a3548a83637e4258da827d49905890f41b8293",
+      "mode": "100644",
+      "sha256": "fa39b90688517182fd70b5dfbf36df00eb354de3d58594ed192190e8cd153ccb"
+    },
+    {
+      "path": "DnD/projects/origami-g002/program/centering_run.rmal",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "390445fa5990380b06fa2e16d81694b9de5b4924",
+      "mode": "100644",
+      "sha256": "69330bb18d7d32409ded408d006b2e34ba0c0ca1e550649f6f7c4f0cb5d0187d"
+    },
+    {
+      "path": "DnD/projects/origami-g002/program/core.rmal",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "e3863e2ebcd0653476baa0b7ab84b90afd2c7650",
+      "mode": "100644",
+      "sha256": "40e47c6b4e9bfcabdd0e01c5a84a6f3c8c36700da051e088979f9569d3a82919"
+    },
+    {
+      "path": "DnD/projects/origami-g002/program/dispatch.rmal",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "a6f26388a730cd94c5d5c3695f077209e0bd44e8",
+      "mode": "100644",
+      "sha256": "92393db6389988d4dc4a7e6c4145f17f3e54ef675f26e042c5725e502c437f48"
+    },
+    {
+      "path": "DnD/projects/origami-g002/program/exploration.rmal",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "f33a5e4b269a785466c61271047e749475a7d955",
+      "mode": "100644",
+      "sha256": "a4ec539f6745134b293acd0d92524dd38887c0c92b5327c7f9a117ad6aa8ee39"
+    },
+    {
+      "path": "DnD/projects/origami-g002/program/models.rmal",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "1c54987e1de1ee53b96da0d22910503a91f7db7c",
+      "mode": "100644",
+      "sha256": "c8fc95466f945b4a54098eaf9337d3fa5e1189a88d6cb9e7f750a77e48d8f088"
+    },
+    {
+      "path": "DnD/projects/origami-g002/program/origami.rmal",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "ebca9eaf59505f02cc5aaae129b15ec2b58185b8",
+      "mode": "100644",
+      "sha256": "6fb0482301b72d3e023e29afddf6cb9f19acfda52b32bdfc96939208052759c6"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/README.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "1c005c406be5933668f3b6576b73a9453913e1bd",
+      "mode": "100644",
+      "sha256": "8c70b59167c09e51f2f56af83473c144d7d18f1445f171c385ed9af78ef4758a"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/SHA256SUMS",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "a20d6230479146cfdd5a953acd777cca461537a7",
+      "mode": "100644",
+      "sha256": "2ac23beafd140f29b212b6cb9907cd1e6735cd535e1f0506a0a791f1b01b130e"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/SOURCE-MANIFEST.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "dd3e6fb2f94b2eb1e0c09199b1128279f599db6e",
+      "mode": "100644",
+      "sha256": "14c65ef8c64039d1176b515d8c6d65941ca6ce6fa7358e5b8a8d7728ed0c5e83"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/TEST-RESULTS.txt",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "19b59a82932c77700ab9ba4213ee6c911671b50d",
+      "mode": "100644",
+      "sha256": "6773e0e60e54bdda695c3692983106260851747e87b49b91e0e9c0c920da95d8"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/bin/origami.cjs",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "417a975c941c29ae4a63958d404e8d2e0f30af14",
+      "mode": "100644",
+      "sha256": "ddedcc1766b2638b23f89862273a2363d0ebb9a0ca27e0b3843303444b6e1433"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/evidence/claims.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "68d2e0741cdd944b345794ea9738ab596d17d6e4",
+      "mode": "100644",
+      "sha256": "2c17a3f85656d35f2b1c77c9f943217d34c1f97bc6b379b95b131bccfdbcb015"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/evidence/provenance.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "051b52c53e3e9043dadffa230528452531c4f85c",
+      "mode": "100644",
+      "sha256": "3fca486a3d5808405262922874b1aa769e796a266c19cbb2376c9ec0a0ed1644"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/evidence/validation-report.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "67b7b5d5b4db05809bcfd4a9506e23352c978f23",
+      "mode": "100644",
+      "sha256": "deb6e43522cba3c1ae3594ccc2b6a814fb2c97ad16e5be21a6cf256541c7bdd3"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/examples/decisions.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "67c67f5f6c52148d1f7d83e68052dec11169bd0c",
+      "mode": "100644",
+      "sha256": "d3b6bde9bb64f207bbb8cd01393f7a3e48575dbda0c79f55ecb0cc0f0aaa5311"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/examples/encode.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "fc9923986ba265c316485940ddc684c8ad47699b",
+      "mode": "100644",
+      "sha256": "b430fd681cfa14185de89221c329c4496b975bb15626a4a1295b475b99ac7458"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/examples/geometry.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "2681cfa9e3aef5f14e6ce95b4b5e1fb44d50856d",
+      "mode": "100644",
+      "sha256": "047f4b64202c345ee0a1c22dd3221517f3b43ac077cc96ee2449a62714056662"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/examples/rf.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "a9c2296c19adc25d6c727286e89db37dc6b776f6",
+      "mode": "100644",
+      "sha256": "1d66c827048821f932fdf94e8d6efe5ee45725df986530c81fa1c95bdfcce974"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/examples/simulation.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "496a9d74265fa8164fd1f42af4a9e2a05e88ed5b",
+      "mode": "100644",
+      "sha256": "0be2de45f46658e751b0cf741c1a4eb26d106215dca06c8bd065244b85caf296"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/index.cjs",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "1189ceca486828a6fe740608461ead8d33d7de70",
+      "mode": "100644",
+      "sha256": "f3c6dfb0d122242c58569da5aee212bdf286a113c1a37920c75fbfc498ed2ead"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/lib/engineering.js",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "b0cb8f5f40a0df8953c8644754246867351fe6b1",
+      "mode": "100644",
+      "sha256": "6d697c27a8b349d9069e74f6942eb781e8265e47186df33a15eee9b6c677fec5"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/lib/exploration.cjs",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "7538e9a6a2da06624629bd4f3a7edb101a8c6180",
+      "mode": "100644",
+      "sha256": "bfbb2fb99aa06df9259e36c8adf62c81003ee8b69bc928c327a7e8c269ae0af2"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/lib/model.js",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "a8ed8890d1c919615ec17892d0128b65f24ad567",
+      "mode": "100644",
+      "sha256": "57ee9eb1f7a52aade659ba801730e07448cfbf216c9691a44bfb9274f7f1209f"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/package.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "a8318f524b1eefbe6a7d8c1074092ded75275bb7",
+      "mode": "100644",
+      "sha256": "4662c3c4cd08d44706941707494640690e5a1101a12ec785a198e6a802b9e192"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/source/13D_Origami_Circuit_Full_Specification.txt",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "a0d9be806f2219e7095b6a1236cf74a881c093f4",
+      "mode": "100644",
+      "sha256": "27843a1b991399b8f12588d32f79ed92226ed64ad3d9d84b2fe587c5848f902e"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/source/13d_origami_circuit_system.html",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "7c1e919bce926438d4c4215ece529dcd4638e8f2",
+      "mode": "100644",
+      "sha256": "d5bd50f0e9ba3b53f9479467b1ca2f2efcd891fc3e1679f3c6962b2c01c39fcd"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/tests/core.test.cjs",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "2c44d7f7584be9b55e2ab7e6387dd77b536e9c5e",
+      "mode": "100644",
+      "sha256": "50f80669c1be8420399830693956e5bdf12ea1ac9396e667f2dadb811f20cc1b"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/tests/engineering.test.cjs",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "2a1e2371b2d1369b1c79bbeb911b5dd7b8f2c6aa",
+      "mode": "100644",
+      "sha256": "23481e485834460ccdd5ce06b29a1e5157c48d8c2aa177ddad29fa3fd91ddb07"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/tests/exploration.test.cjs",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "01f0b3a5385cd3a4b3411408ce01cac250ba789a",
+      "mode": "100644",
+      "sha256": "5a13f363c2515692490cd3550224c6c56ce186dcfadf7ae6fe368c3459116500"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/tests/independent.test.cjs",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "613f47382c812561ee2c9fa4de29ba796fe4ffe5",
+      "mode": "100644",
+      "sha256": "9de09c68287f0b02814c5d50b67629ef89fa7bb46eeea41f42810d2b8bd1484e"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/tests/model.test.cjs",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "8dbef7e953f2662088315dc3bacdd549967874d6",
+      "mode": "100644",
+      "sha256": "9d2e72951b6f59b68c2b141a0ee4b2a583972d2b91c2fee6c887d79672a8bcf4"
+    },
+    {
+      "path": "DnD/projects/origami-g002/scripts/build-gcc13-audit.sh",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "16e0102084c3f3295e9c0e44b35e163889332825",
+      "mode": "100644",
+      "sha256": "38956e2de54686a13babb4c74c797aa5d293ea4957d396bd2966de6b6df21982"
+    },
+    {
+      "path": "DnD/projects/origami-g002/scripts/build.py",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "15d39f1469b407f52c45ef9055c1b82a09047534",
+      "mode": "100644",
+      "sha256": "0297ea163d3b4a8e2e4267512521ebc7a0a0cb7c589cf48c87ccac32b6703069"
+    },
+    {
+      "path": "DnD/projects/origami-g002/tests/centering.py",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "034563af92966fe0c5e124b9c6001645199c6c27",
+      "mode": "100644",
+      "sha256": "ef8fc1b18c80db5deedf72532896a4b21104e3e5399f4e11f6821c07cd0cab46"
+    },
+    {
+      "path": "DnD/projects/origami-g002/tests/centering_run.py",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "bf14849c5f0b41bb1a73db4e5175583ba04e6cbd",
+      "mode": "100644",
+      "sha256": "16c07ab0f0fbd1dfe3d49928fa888fd6687b17520c99ec3d1a5528aaae28d197"
+    },
+    {
+      "path": "DnD/projects/origami-g002/tests/homeward.py",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "682c61aa80281f29872b6a76cf5d824e3a48668e",
+      "mode": "100644",
+      "sha256": "653890c78828724250dbf14aa89abacec3994a1e141ffa0f1e663f7de694a566"
+    },
+    {
+      "path": "DnD/projects/origami-g002/tests/homeward_parity.py",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "16eb2880a3b01dd2e63037de3451ab3e83c11606",
+      "mode": "100644",
+      "sha256": "722b609efe18ec7c7a721bb2066ffed7d42a7c25c018a56e77b582c13a7cfa1e"
+    },
+    {
+      "path": "DnD/projects/origami-g002/tests/parity.py",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "62d899db7cb90b399f60704924b6a28d49265f97",
+      "mode": "100644",
+      "sha256": "78b4dfd2298dc558cf3d832a85a97ac69d0ec96ae6c6c3706128b48666e7fa31"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/CMakeLists.txt",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "bd969a41e88af629e3a488b7ecc17ad4793cca5c",
+      "mode": "100644",
+      "sha256": "ea8d4d914c7592fb51b0896ba88fb8321e425bd00c3415654ec77d72ec9b73ca"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/CURRENT.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "51ad1a5545797ddfe08017b73a2cb8f9d3e27f0d",
+      "mode": "100644",
+      "sha256": "5113def7bb82aaea659a2f79c5e1292462c69bc7ba15bda2ce742eafb0f43fbc"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/README.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "9796d53779c29a8d11695b24d37e950f76cc90f4",
+      "mode": "100644",
+      "sha256": "e03529e73fb7c0dc115876c3558830c8f59fa402b6decaaa708ed0ac6a020ba7"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/README_COMPILER.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "234c64a1dcb8338d75b76e4906e576abf7bc9c45",
+      "mode": "100644",
+      "sha256": "9c3fd0245ccaa5ff9eafadbac0cf1a236b9e4b529f5a64aa640ffdb36cf3a6fb"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/docs/RMAL_C23_WINDOWS.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "6dab947c6f9bae29c24d6a1c8dae7893331e5650",
+      "mode": "100644",
+      "sha256": "967445baf9de8c33b3fbf8c2e6a7c66911c41d06c915b436f85a8e5276ee4185"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/evidence/RMAL_C23_WINDOWS_VALIDATION_2026-09-26.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "590363dea1fb633eb68ce728e04e6d9cb894dd39",
+      "mode": "100644",
+      "sha256": "b94ea55130290fb2a9c3b1e6a48845ae85b7b6774a15b2f616210e8fbfbbe15c"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/examples/hello.rmal",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "94791b840bcaa42e7af4ad6699eab07a68fc7693",
+      "mode": "100644",
+      "sha256": "268870cd0bef245bb3ae238822b68023c5470205bee52abe151faf80efad6efe"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/include/rmal/rmal.h",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "87754b46ec6e902c69e64abcdcbfa0b541661540",
+      "mode": "100644",
+      "sha256": "ef050981cbd054a6dcc49344fe31a5a1dee81e44455a5936f77468d4ff63ffba"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/spec/RMAL_EBNF.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "33504efbc3a84fa2a6a132547e5e9d14de81d8e7",
+      "mode": "100644",
+      "sha256": "40722c989d0a69270928c20bc77583725e4b362101c5b8b0e9a0c658b7e1c07d"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/spec/RMAL_LANGUAGE_SPEC_3.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "819b30348fb0b9df0f81e92e9456e94c36096231",
+      "mode": "100644",
+      "sha256": "2242d3eafcc1d12afc86565bf4a581cebcc1fd19eb9a295498b5a2e4e282eff0"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/src/c23/part01.inc",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "38d204f206158cb19482ccafcaff37aabba3271d",
+      "mode": "100644",
+      "sha256": "dc171d1590ae64b91ffc35dae43787f904c88330e308519800cd03da249c1057"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/src/c23/part02.inc",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "e64c387ff39bae3aae0ada238bf2dc165ddc3e74",
+      "mode": "100644",
+      "sha256": "1402f026252b5511e102795e28aa41a448135c3d7597442ccaca2b21c34f7d29"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/src/c23/part03.inc",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "f7ca75934991d0ed857493e0d06ab932fede2cde",
+      "mode": "100644",
+      "sha256": "a57e241c31d355905c2e8f5dd9f877c8a6ebcc18a369b24e69bf3b67a491f893"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/src/c23/part04.inc",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "c8b6d7823cb3d373577b155d20d881bb5f90aa4f",
+      "mode": "100644",
+      "sha256": "00656fef55b86997d98cec89b0cbb58a989344a9dda904de99c2215c24362783"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/src/c23/part05.inc",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "bc5cf3d54b05cb928ccc0a51d4adc0229162c16f",
+      "mode": "100644",
+      "sha256": "bb3d90aa12e96a954823103ba4fdc0972c1f6a525f8fde1991b52862a5d2ecf8"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/src/main.c",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "ba7132f9f3e109c279170259edbe1ce47b17fdaf",
+      "mode": "100644",
+      "sha256": "a3f05056af8bf4153db78f96357c40e128ea53490718c9af1b1a5d9b22a5afe6"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/src/rmal.c",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "c0cd59e86468822090f7b2c0a36fc8c4b32c0f67",
+      "mode": "100644",
+      "sha256": "a2f514e8f84106614d0ee65f84126e64a7fe5b96562e2e4d2e63d296b1acde42"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/tests/const_immutable_reject.rmal",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "034ad5da1ef481eca8796da13af94d3b0ad4c235",
+      "mode": "100644",
+      "sha256": "cc5b95889aa4e003b3fe4437b74c7f2965e0614b6b0f507d850147c575c27112"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/tests/legacy.rmal",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "30ce4bf3f2849090aacb6edbcd97d60ce361600c",
+      "mode": "100644",
+      "sha256": "718ed316da33753a7a7b096fcff713e66173c57c41799d568fb4544f2f64f1d8"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/tests/numeric-extension.rmal",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "2761c27d4a8f0b345040b09f2b3de0a1a50ed291",
+      "mode": "100644",
+      "sha256": "8306c1f79014727d9102fbbedf606cbb67cd54c60e79eb1c1ae1e1b4f5c7d94c"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/tests/numeric-host.c",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "de4809c48334677158d745a029d1d2c929d8d8e4",
+      "mode": "100644",
+      "sha256": "e143fc7c5388d672cba94b023bb4b7fcf58d9062c8a25793b053c5b87e48eea6"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/tests/recovered_surface.rmal",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "1e663ce496695d4f45553a2161f4f43977afd2ef",
+      "mode": "100644",
+      "sha256": "0ac6f28da1f0905a21ff59264bb334d4d15060fbdecd301f3a3d776baade8bc2"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/tests/test_w114_sign_normalization.py",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "adac68797ccbbf9869b75ae12be02b9fa9dc4380",
+      "mode": "100644",
+      "sha256": "becefbadf73ea54cf0bb5312b7533cfd4536d4070b1f0b8350f99a3074056cf4"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/tests/typed_equality.rmal",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "05de5c7db6fe30c4da314e17cdda51c63583c303",
+      "mode": "100644",
+      "sha256": "a0281524e4963fcf98a44faac89c0037a508363669bfc532532509caa11b6d70"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/tests/verify_dynamic_rmal.py",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "cb4f8cbd73d86378ed21dcaad1ede850f321b2ca",
+      "mode": "100644",
+      "sha256": "e39f0f9de1b86fe9ee6510410870cac2440186042ce8c9130525397bb9b2eb4d"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/tests/verify_w114_sign_normalization.py",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "84cfb10381fd0c9c59f49d94b1d37e0abec80821",
+      "mode": "100644",
+      "sha256": "e4abfa95e57eb8a948cdf2e82c79b3200be2b34cc80d2d4cb5cc3c348377243c"
+    },
+    {
+      "path": "DnD/spec/RMAL_COMPATIBILITY_MATRIX.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "b933c0cd6ce6d7981100d5a3d9f147a4352060a2",
+      "mode": "100644",
+      "sha256": "ee0b0b59dc8bc42784adb0654a44ff77a98df471fa1e9db5952554aa0424f73f"
+    },
+    {
+      "path": "DnD/spec/RMAL_EBNF.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "33504efbc3a84fa2a6a132547e5e9d14de81d8e7",
+      "mode": "100644",
+      "sha256": "40722c989d0a69270928c20bc77583725e4b362101c5b8b0e9a0c658b7e1c07d"
+    },
+    {
+      "path": "DnD/spec/RMAL_LANGUAGE_SPEC_3.json",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "620ae957ae56145349366409117b51df46cbd42f",
+      "mode": "100644",
+      "sha256": "52d838d41f1e3ed2d3f0ad45e887418f64812d1cab4f8b19db4e2cb816e25b6b"
+    },
+    {
+      "path": "DnD/spec/RMAL_LANGUAGE_SPEC_3.md",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "819b30348fb0b9df0f81e92e9456e94c36096231",
+      "mode": "100644",
+      "sha256": "2242d3eafcc1d12afc86565bf4a581cebcc1fd19eb9a295498b5a2e4e282eff0"
+    },
+    {
+      "path": "DnD/src/c23/native_vm.inc",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "9ef62586f3acdbf00e36a659aa9add1048babd9a",
+      "mode": "100644",
+      "sha256": "1b0fe5db1f82e8a0de09867ce6f4923f879f177899193747f47019d9dd21f6ba"
+    },
+    {
+      "path": "DnD/src/c23/part01.inc",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "fd649682b009b6291faed13a1111da146578d6d1",
+      "mode": "100644",
+      "sha256": "7fc2c42efc10143e276fac4d555bd99a061d93a3d85391631ead42aad55b9abb"
+    },
+    {
+      "path": "DnD/src/c23/part02.inc",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "84efe37bae9ed1ad1a05f31d9497bc1072962411",
+      "mode": "100644",
+      "sha256": "cae4c3ec17114204f573050d61c78949e9f66f4c81ccb094e208ba316bc1535a"
+    },
+    {
+      "path": "DnD/src/c23/part03.inc",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "64d2dcee8d2acfd0f7dd069656cd15ae824bf43d",
+      "mode": "100644",
+      "sha256": "6b0f15288c10ba3c4985a464b52b89f1c7f7da2ee674728887f33d202a6d4fc3"
+    },
+    {
+      "path": "DnD/src/c23/part04.inc",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "34e2dee073e928b3903c8a6f19bb5b3cd211aa3d",
+      "mode": "100644",
+      "sha256": "322c9170bce8cf5ca013599c7765d434afdd86ea5cd40333e6b2a69a94b5130b"
+    },
+    {
+      "path": "DnD/src/c23/part05.inc",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "9edaa86f44b9d8605c64890c2c35724ca702a875",
+      "mode": "100644",
+      "sha256": "bbe8cfd221e36847a085d8f7e3b052240ff5e3d6d66aa8c5f94f4f701948d43d"
+    },
+    {
+      "path": "DnD/src/main.c",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "ba7132f9f3e109c279170259edbe1ce47b17fdaf",
+      "mode": "100644",
+      "sha256": "a3f05056af8bf4153db78f96357c40e128ea53490718c9af1b1a5d9b22a5afe6"
+    },
+    {
+      "path": "DnD/src/rmal.c",
+      "source_repository": "DnD",
+      "source_revision": "2f9fbe3b1964194d8f7b525c6fc90a22b3ff7df9",
+      "git_blob": "c0cd59e86468822090f7b2c0a36fc8c4b32c0f67",
+      "mode": "100644",
+      "sha256": "a2f514e8f84106614d0ee65f84126e64a7fe5b96562e2e4d2e63d296b1acde42"
+    }
+  ],
+  "limitations": [
+    "Scope manifest is a navigation scope, not a standalone dependency closure.",
+    "No source bytes or historical evidence rewritten.",
+    "Public content clearance and standalone validation are incomplete.",
+    "Original 740 passing tests and two skips have not been replayed."
+  ]
+}

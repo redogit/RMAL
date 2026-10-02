@@ -1,0 +1,48 @@
+# CURRENT — v0.7 Mirror / RMAL native integration
+
+Date: 2026-09-29. Continues merged PR #2 at
+`141a60f58bdfe6d36774e0fba5e8350cb6ef5dcf` through PR #3.
+
+## Implemented and locally tested
+
+- Immutable FunctionObject; exact native source-occurrence/context-bound AnyFunctor.
+- Mirror uses the existing invocation/cache/edge path, not a parallel engine.
+- Computation and admission remain separate; rejected native candidates survive
+  in versioned receipts without becoming admitted state nodes.
+- Exact involution, replay and Homeward recovery.
+- Actual RMAL C23 VM execution through an explicitly bound native capability.
+- Separate-process checkpoint/replay with exact RMAL source binding.
+
+Fresh local integration: Release 25/25; Debug ASan+UBSan 25/25. The 6,487-byte
+process witness retains three states, three edges/invocations and one rejected
+candidate. Its archive re-encodes byte-identically before and after replay.
+See `evidence/v0_7/VERIFICATION.md`, `PROCESS_RECEIPT.json` and `SOURCE_MANIFEST.json`.
+Root C23/ABI Actions checks are a separate scope from the full native local suite.
+
+## Recovery and limits
+
+Git-only native builds require the exact v0.3 archive and existing recovery script;
+the companion bundle includes all original source. `DF_REQUIRE_FULL_NATIVE=ON`
+rejects an incomplete setup rather than silently passing standalone tests.
+
+Remaining: Meet4/Overlap unification; live cohorts; externally owned result-object
+persistence; authenticated callbacks/source custody; native Windows durable I/O;
+complete four-ID semantic cataloging; and generic request classes. The original
+VM trace is process-local; source digest and native invocation trace persist.
+
+## AnyFunctor research alignment
+
+The later Work research specifies a singular partial evaluator and ten optional
+structural evaluators. Their exact relationship to this bounded Mirror path,
+proposed certificate checks and counterprobes are documented in
+[`docs/ANYFUNCTOR_STRUCTURAL_RECONCILIATION_2026-09-29.md`](docs/ANYFUNCTOR_STRUCTURAL_RECONCILIATION_2026-09-29.md).
+The structural planner and general evaluator are research targets, not v0.7
+runtime features or results.
+
+## Way back
+
+v0.6 evidence remains unchanged under `evidence/v0_6/`; v0.5 under `evidence/v0_5/`.
+The earlier CURRENT/readme are recoverable at the exact PR #2 merge above.
+The v0.6 large checkpoint digest remains
+`8ab9f2b15524ac08d3d8cdf8959e7da344a301cca9a35a51530f86868309670a`.
+The frozen v0.3 engine and DFNAT001 wire schema are unchanged.

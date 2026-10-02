@@ -1,0 +1,43 @@
+{
+  "schema": "standalone-export-validation/v1",
+  "checks": [
+    {
+      "name": "configure",
+      "cwd": ".",
+      "command": [
+        "cmake",
+        "-S",
+        "DnD",
+        "-B",
+        ".build/rmal",
+        "-DCMAKE_BUILD_TYPE=Release"
+      ]
+    },
+    {
+      "name": "build",
+      "cwd": ".",
+      "command": [
+        "cmake",
+        "--build",
+        ".build/rmal",
+        "--parallel",
+        "2"
+      ]
+    },
+    {
+      "name": "ctest",
+      "cwd": ".",
+      "command": [
+        "ctest",
+        "--test-dir",
+        ".build/rmal",
+        "--output-on-failure"
+      ]
+    }
+  ],
+  "not_exercised": [
+    "Chrome/Chromium browser checks (browser absent in preparation environment).",
+    "Windows SDK, Android and full LLVM/MLIR native builds.",
+    "Excluded projection verifier and privacy/lineage documents/tests remain withheld."
+  ]
+}

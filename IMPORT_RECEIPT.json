@@ -1,0 +1,2659 @@
+{
+  "schema": "authorized-connector-import/v1",
+  "repository": "redogit/RMAL",
+  "original_snapshot_commit": "48c4c34486630032fb5eb9dc4615e9b3c9024f6d",
+  "original_additive_commit": "53672da5c5e53542dc4058ec6dd815d24f359a61",
+  "original_snapshot_tree": "b5bb1600700517efedae706a541feea45079dd2e",
+  "exact_history_bundle_sha256": "be8f9bd6e650694c34e30a918d362d83149ac2d1152a3e2eff7aa170f59ae9a1",
+  "preserved_remote_parent": "37f1bbd3d2b6c6f0d36e8461cb4db5cba6ecb1ae",
+  "preserved_history": "Existing five remote user commits retained through first-parent ancestry; deleted original root LICENSE/README not resurrected.",
+  "commit_representation": "New connector-generated commit identities explicitly authorized; original exact-history bundles retained unchanged.",
+  "source_scope": {
+    "id": "rmal",
+    "name": "RMAL",
+    "purpose": "Language, compiler, native integrations, and existing RMAL project modules",
+    "repositories": [
+      "DnD"
+    ],
+    "source_roots": [
+      "DnD/include",
+      "DnD/src",
+      "DnD/spec",
+      "DnD/projects"
+    ],
+    "entry_points": [
+      "DnD/README.md",
+      "DnD/CURRENT.md",
+      "DnD/README_COMPILER.md",
+      "DnD/projects/README.md"
+    ],
+    "organization_action": "Create entry points outside DnD; reference existing paths without changing its contents",
+    "workspace_directory": "redogit/workspaces/rmal"
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc23526fb184ca30304b85d8709a97d82646cb58",
+      "sha256": "7e9ae8cfd10ed919d51c6d885de783c8c62cd541999883fbfeff237faa9151a1"
+    },
+    {
+      "path": "DnD/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3dc01af9675644463678bae1004f81ce8337f955",
+      "sha256": "af0c6f19391d1083f2a6f6f1b5f339c4c233d84d4577c258b6b1db47d16410bd"
+    },
+    {
+      "path": "DnD/CURRENT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24d38b10e76fd59c9b79268a995dbcb01899b120",
+      "sha256": "0811af26b8a880a5bb227128f47c6f2ec3cb2b84d484aa64b7dc0191858f24ae"
+    },
+    {
+      "path": "DnD/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0a2c2f7c1ef8efc084577e6e97763e48660225a",
+      "sha256": "e42466787500d24acf591b508395ec87b193c299e849a9c9b35c14b515b0e7fd"
+    },
+    {
+      "path": "DnD/README_COMPILER.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "234c64a1dcb8338d75b76e4906e576abf7bc9c45",
+      "sha256": "9c3fd0245ccaa5ff9eafadbac0cf1a236b9e4b529f5a64aa640ffdb36cf3a6fb"
+    },
+    {
+      "path": "DnD/RMAL_INTAKE_INDEX.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d9b846c62ae8cc1e168dd7ec0a36a5215fa4b5f",
+      "sha256": "13c4e30d7d29fba48749c0c0a1b95aeadbe59cfe3d2a5505de1be45aec22468c"
+    },
+    {
+      "path": "DnD/docs/LIBRARIES_OF_LIBRARIES_RMAL_BUILD_2026-09-19.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6cecb400d79818bd570d7eede8dfd6de907a6dc2",
+      "sha256": "e89f26f1dad04802fb281a7db4e0f20a41b6f7b7c3fad6b44c2b35455c6c5596"
+    },
+    {
+      "path": "DnD/docs/RMAL_BIDIRECTIONAL_HANDOFF_RESPONSE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8530dec30f553d1de2b5ff4a3783964eaf5750a",
+      "sha256": "0adbc1d7ecfd9dbd80011ff6d443f0af9965cc0828e6b063d952b850353744ad"
+    },
+    {
+      "path": "DnD/docs/RMAL_C23_WINDOWS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6dab947c6f9bae29c24d6a1c8dae7893331e5650",
+      "sha256": "967445baf9de8c33b3fbf8c2e6a7c66911c41d06c915b436f85a8e5276ee4185"
+    },
+    {
+      "path": "DnD/docs/RMAL_CHAT_INPUT_OUTPUT_DUMP_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "beaaef7a440dd63756b9ebdda48a290ffb0983c2",
+      "sha256": "e850c508864c37f43531c5245f13c4ae51d85a7eaff631ef77a33fdc43c7ddaf"
+    },
+    {
+      "path": "DnD/docs/RMAL_CHAT_RECOVERY_2026-09-26.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd0a31bc4cef373e0b4d9870617a9b4c1118df24",
+      "sha256": "0351af33efbd596dd132c3a0f16633d9fe9a28dd0a572b7742218505512a8a88"
+    },
+    {
+      "path": "DnD/docs/RMAL_COOPERATIVE_IMPLEMENTATION_PROTOCOL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8cf831a1d2584d40a1e249aa631685a489ed204",
+      "sha256": "a16e971c244c86c1d7e64375eb0fb8cf606d7a7e47064bb145545dcee58298cc"
+    },
+    {
+      "path": "DnD/docs/RMAL_DEFINITIONS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4fe4b74b1bdc3e4d974ce6f6519e6bf1fad8ab8f",
+      "sha256": "c51b9fc993250f92da4372c64b617359161ede99e42969840681d1f8fe67cf23"
+    },
+    {
+      "path": "DnD/docs/RMAL_LINEAGE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84fe03250de80ee6bdd5397151983c00017061af",
+      "sha256": "5fcab13c3b4072300052e0ccad684f51288b237cf9695546cddfe85107d8baee"
+    },
+    {
+      "path": "DnD/docs/RMAL_PNP_LIVE_DESIGN_2026-09-25.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e4b014879eaccab434c999cc78dff462f405b43",
+      "sha256": "611efc7982c47b17946c7ce6d47c52ee560fc007d9f08dbbd3f8d70aa9de2800"
+    },
+    {
+      "path": "DnD/docs/RMAL_RELATED_FILE_INTEGRATION.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b1d9cb754e07d33693a7d91432fa3e3735ddba5",
+      "sha256": "bc7fcdae7531b3b0ca82a76cfa9204aad62a71a87c8b14127eccb07bc91f7d92"
+    },
+    {
+      "path": "DnD/docs/RMAL_RESEARCH_ORIENTATION_2026-09-25.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e74d1b3f4f49d9831aa00f2831a953a1c3e691a",
+      "sha256": "fcfdc4815a6285ce33a2b6474721e409f7e9c164201dc808ccf8347fffeea1b4"
+    },
+    {
+      "path": "DnD/docs/RMAL_TFEML.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c39bcb40be3aff21c09014f501d14ec040ea7616",
+      "sha256": "b5ca8cbd821ded6ae0e8a471863c9b3e2604f8edae10a6bafd4d627d52b4b8fa"
+    },
+    {
+      "path": "DnD/evidence/RMAL_BIDIRECTIONAL_HANDOFF_RESPONSE_2026-09-20.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b222c3820b86f0e57fff008d40367e221360bcb",
+      "sha256": "1dd7fb040354183aeb7ce105db54662a252c3481305f9435aeb3f50048a2c5b0"
+    },
+    {
+      "path": "DnD/evidence/RMAL_C23_WINDOWS_VALIDATION_2026-09-26.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "590363dea1fb633eb68ce728e04e6d9cb894dd39",
+      "sha256": "b94ea55130290fb2a9c3b1e6a48845ae85b7b6774a15b2f616210e8fbfbbe15c"
+    },
+    {
+      "path": "DnD/evidence/RMAL_COOPERATIVE_IMPLEMENTATION_PROTOCOL_2026-09-19.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c6907e0dcf3e5815f5d07d322a9bf2a8dd94418",
+      "sha256": "c3f4f4763fe9f3e6d74ee9d4a2786c62281d98cf5c934cf07b7cc6710d5e7033"
+    },
+    {
+      "path": "DnD/evidence/RMAL_NATIVE_CPP_FORMALIZATION_2026-09-26.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6347b38eedd5df3d9b9a7b5d76ffbab9d2a1d49e",
+      "sha256": "820314e1cc280319256f468a8b5d5d21e5dd327155e0ce83099e0988adb07603"
+    },
+    {
+      "path": "DnD/examples/corpus/INDEX.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fceb3f494c8502c8ea88716cdc7fc1000573bb36",
+      "sha256": "eb4d59dc2c996de9a752ddd809cd5180ef95c4476553548d8147353b63f862d0"
+    },
+    {
+      "path": "DnD/examples/corpus/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dbdf0dd8d2d1eb1f3521ed57bd3f080ad63871cf",
+      "sha256": "d60426f03718cae8373d41ceaa5c064f7b87b3df4fbec7924c2aa2436f374975"
+    },
+    {
+      "path": "DnD/examples/corpus/git/redogit/DnD/examples/hello.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2c9bcdefd575e1fb25a80a14d2542fb48818a9f",
+      "sha256": "7ffdd17aa825f9b4828a170099e4262d2e503575fce10f1a2dcb62de86f3d382"
+    },
+    {
+      "path": "DnD/examples/corpus/git/redogit/DnD/provenance/Other-Projects-/Decision Field MMORPG/DYNAMIC_RMAL_CHARACTERS.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6b86d1c81479b742134ee08ca9e83b087afcf9d",
+      "sha256": "df358562307db099a8bdd14da7312a22bef3138069c0ab24e244f8f73b96d053"
+    },
+    {
+      "path": "DnD/examples/corpus/git/redogit/DnD/provenance/Other-Projects-/RMAOS MiniGX/circuits/w114_perturbation.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f73de2f53acf70e33967a336e75015ab8601b4aa",
+      "sha256": "2f234c3840ec6c30bb3b4ef096efbc560d5ab6d9b525154c2db44c20662eb363"
+    },
+    {
+      "path": "DnD/examples/corpus/git/redogit/DnD/provenance/Other-Projects-/docs/RMAL_BIDIRECTIONAL_HANDOFF_RESPONSE.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae6147ca1c706374f52dd9675c842d51d4bdc0e6",
+      "sha256": "d4746660fad79457724e09a9e48ff4cc3ae4a22b627ddb44032b165ce66c67c9"
+    },
+    {
+      "path": "DnD/examples/corpus/git/redogit/DnD/provenance/Other-Projects-/docs/RMAL_COOPERATIVE_IMPLEMENTATION_PROTOCOL.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb7725c1e22db3c2b8a342687a7ed7fc5f8ffd17",
+      "sha256": "0b5301d6b4f1fb185d0a97fcc2e826ccd9770041574e31cb750a73e985d6d1c4"
+    },
+    {
+      "path": "DnD/examples/corpus/git/redogit/DnD/provenance/conscience64/play/mmo/DYNAMIC_RMAL_CHARACTERS.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0078e73143b3e1a706b28593f0ffab499942554b",
+      "sha256": "2f942ba5d877f451338bd4ceafc3b4f41e9058ce83d64ce6a812beccc203b15a"
+    },
+    {
+      "path": "DnD/examples/corpus/git/redogit/DnD/provenance/library/CRACK_ALL_IN_MY_LANGUAGE.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af537389db8ea0e25c0fa363e66cb7ce1a25096b",
+      "sha256": "2786cc16ca205ddda08bb0c5282e217bcc6db29eec3e9b83c6df41e9b30f5381"
+    },
+    {
+      "path": "DnD/examples/corpus/git/redogit/DnD/provenance/library/RMALC.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a097fdf7a0c9428a08c6f23da0dddff927492ade",
+      "sha256": "e12d68c86daadd4631f9add7bf6db003557bc89c599fbc2330a97c36b247b1cf"
+    },
+    {
+      "path": "DnD/examples/corpus/git/redogit/DnD/provenance/redogit/libraries-of-libraries.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c01e1a2a5273775c6091d4f810d619dbe4bfad7",
+      "sha256": "efa67c0ce9cff2047c7a7c6dbd045d34f7624a866a5fd5b1cc5456ea556b043d"
+    },
+    {
+      "path": "DnD/examples/corpus/git/redogit/DnD/rmal/DYNAMIC_RMAL_CHARACTERS.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6b86d1c81479b742134ee08ca9e83b087afcf9d",
+      "sha256": "df358562307db099a8bdd14da7312a22bef3138069c0ab24e244f8f73b96d053"
+    },
+    {
+      "path": "DnD/examples/corpus/git/redogit/DnD/rmal/RMAL_BIDIRECTIONAL_HANDOFF_RESPONSE.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae6147ca1c706374f52dd9675c842d51d4bdc0e6",
+      "sha256": "d4746660fad79457724e09a9e48ff4cc3ae4a22b627ddb44032b165ce66c67c9"
+    },
+    {
+      "path": "DnD/examples/corpus/git/redogit/DnD/rmal/RMAL_COOPERATIVE_IMPLEMENTATION_PROTOCOL.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb7725c1e22db3c2b8a342687a7ed7fc5f8ffd17",
+      "sha256": "0b5301d6b4f1fb185d0a97fcc2e826ccd9770041574e31cb750a73e985d6d1c4"
+    },
+    {
+      "path": "DnD/examples/corpus/git/redogit/DnD/rmal/libraries-of-libraries.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c01e1a2a5273775c6091d4f810d619dbe4bfad7",
+      "sha256": "efa67c0ce9cff2047c7a7c6dbd045d34f7624a866a5fd5b1cc5456ea556b043d"
+    },
+    {
+      "path": "DnD/examples/corpus/git/redogit/DnD/rmal/w114_perturbation.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f73de2f53acf70e33967a336e75015ab8601b4aa",
+      "sha256": "2f234c3840ec6c30bb3b4ef096efbc560d5ab6d9b525154c2db44c20662eb363"
+    },
+    {
+      "path": "DnD/examples/corpus/git/redogit/DnD/tests/legacy.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30ce4bf3f2849090aacb6edbcd97d60ce361600c",
+      "sha256": "718ed316da33753a7a7b096fcff713e66173c57c41799d568fb4544f2f64f1d8"
+    },
+    {
+      "path": "DnD/examples/corpus/git/redogit/DnD/tests/recovered_surface.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e663ce496695d4f45553a2161f4f43977afd2ef",
+      "sha256": "0ac6f28da1f0905a21ff59264bb334d4d15060fbdecd301f3a3d776baade8bc2"
+    },
+    {
+      "path": "DnD/examples/corpus/git/redogit/Other-Projects-/Decision Field MMORPG/DYNAMIC_RMAL_CHARACTERS.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6b86d1c81479b742134ee08ca9e83b087afcf9d",
+      "sha256": "df358562307db099a8bdd14da7312a22bef3138069c0ab24e244f8f73b96d053"
+    },
+    {
+      "path": "DnD/examples/corpus/git/redogit/Other-Projects-/RMAOS MiniGX/circuits/w114_perturbation.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f73de2f53acf70e33967a336e75015ab8601b4aa",
+      "sha256": "2f234c3840ec6c30bb3b4ef096efbc560d5ab6d9b525154c2db44c20662eb363"
+    },
+    {
+      "path": "DnD/examples/corpus/git/redogit/Other-Projects-/docs/RMAL_BIDIRECTIONAL_HANDOFF_RESPONSE.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae6147ca1c706374f52dd9675c842d51d4bdc0e6",
+      "sha256": "d4746660fad79457724e09a9e48ff4cc3ae4a22b627ddb44032b165ce66c67c9"
+    },
+    {
+      "path": "DnD/examples/corpus/git/redogit/Other-Projects-/docs/RMAL_COOPERATIVE_IMPLEMENTATION_PROTOCOL.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb7725c1e22db3c2b8a342687a7ed7fc5f8ffd17",
+      "sha256": "0b5301d6b4f1fb185d0a97fcc2e826ccd9770041574e31cb750a73e985d6d1c4"
+    },
+    {
+      "path": "DnD/examples/corpus/git/redogit/Other-Projects-@rmal-cpp-language-v3/Decision Field MMORPG/DYNAMIC_RMAL_CHARACTERS.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6b86d1c81479b742134ee08ca9e83b087afcf9d",
+      "sha256": "df358562307db099a8bdd14da7312a22bef3138069c0ab24e244f8f73b96d053"
+    },
+    {
+      "path": "DnD/examples/corpus/git/redogit/Other-Projects-@rmal-cpp-language-v3/RMAL/examples/hello.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2c9bcdefd575e1fb25a80a14d2542fb48818a9f",
+      "sha256": "7ffdd17aa825f9b4828a170099e4262d2e503575fce10f1a2dcb62de86f3d382"
+    },
+    {
+      "path": "DnD/examples/corpus/git/redogit/Other-Projects-@rmal-cpp-language-v3/RMAL/tests/legacy.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30ce4bf3f2849090aacb6edbcd97d60ce361600c",
+      "sha256": "718ed316da33753a7a7b096fcff713e66173c57c41799d568fb4544f2f64f1d8"
+    },
+    {
+      "path": "DnD/examples/corpus/git/redogit/Other-Projects-@rmal-cpp-language-v3/RMAOS MiniGX/circuits/w114_perturbation.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f73de2f53acf70e33967a336e75015ab8601b4aa",
+      "sha256": "2f234c3840ec6c30bb3b4ef096efbc560d5ab6d9b525154c2db44c20662eb363"
+    },
+    {
+      "path": "DnD/examples/corpus/git/redogit/Other-Projects-@rmal-cpp-language-v3/docs/RMAL_BIDIRECTIONAL_HANDOFF_RESPONSE.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae6147ca1c706374f52dd9675c842d51d4bdc0e6",
+      "sha256": "d4746660fad79457724e09a9e48ff4cc3ae4a22b627ddb44032b165ce66c67c9"
+    },
+    {
+      "path": "DnD/examples/corpus/git/redogit/Other-Projects-@rmal-cpp-language-v3/docs/RMAL_COOPERATIVE_IMPLEMENTATION_PROTOCOL.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb7725c1e22db3c2b8a342687a7ed7fc5f8ffd17",
+      "sha256": "0b5301d6b4f1fb185d0a97fcc2e826ccd9770041574e31cb750a73e985d6d1c4"
+    },
+    {
+      "path": "DnD/examples/corpus/git/redogit/conscience64/play/mmo/DYNAMIC_RMAL_CHARACTERS.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0078e73143b3e1a706b28593f0ffab499942554b",
+      "sha256": "2f942ba5d877f451338bd4ceafc3b4f41e9058ce83d64ce6a812beccc203b15a"
+    },
+    {
+      "path": "DnD/examples/corpus/git/redogit/redogit/libraries-of-libraries.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c01e1a2a5273775c6091d4f810d619dbe4bfad7",
+      "sha256": "efa67c0ce9cff2047c7a7c6dbd045d34f7624a866a5fd5b1cc5456ea556b043d"
+    },
+    {
+      "path": "DnD/examples/corpus/inputs/SOURCE_MANIFEST.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16e981f791b67cb30aa6311a5a6ff66fefcb617d",
+      "sha256": "3226af751a2ff9491040097753ea4585dabb8ced333c39a0fe0b7f6f0590f4e8"
+    },
+    {
+      "path": "DnD/examples/corpus/library/BOOK_OF_BOOKS_COMPILED.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a8e9f56b41be4220d9ac9958604d56413a1bcb9",
+      "sha256": "96bc6489d24f9a7082845986b74b5d09dcc2f463da2df12d56503d2788b00ac7"
+    },
+    {
+      "path": "DnD/examples/corpus/library/BOOK_OF_BOOKS_INTEGRATION.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06923044f50e8cb1f1614a45754a7560f853a16d",
+      "sha256": "681b50e6302c140f673d935370110f272526b43306a37263dff34275a06066ed"
+    },
+    {
+      "path": "DnD/examples/corpus/library/CLAIMS_COROLLARIES.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d23118ecf8c71f7274c24cb03329fd81f76f16c",
+      "sha256": "879fc3d0c5cca30d5e8cc3bec676d8cc38faddf37e98beda4aa66cad7c835fe3"
+    },
+    {
+      "path": "DnD/examples/corpus/library/CLARITY_DYNAMICITY_CORE.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c54f4ad7e74d2b0579299057be47f814bf71e69f",
+      "sha256": "1cec1b62c60ac6c6a5194e558bf0ca614329a9afbe5cad7808fcb94826eb765b"
+    },
+    {
+      "path": "DnD/examples/corpus/library/COINED_NAMES.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6495273b932280673ff1f47a40a93af813f85602",
+      "sha256": "4ca0824b4dfe592a17e98e62f30c0bbdfee86220dc3b6d8899f300e236632632"
+    },
+    {
+      "path": "DnD/examples/corpus/library/CONTEXT_CRACK_EXEC.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f91755a568dc168b3aa880b41400cc1bb57f6ab2",
+      "sha256": "c74589faf897b4854ceaa85ad536878ffdda9aa1e9fcf617544a705b0ec5176f"
+    },
+    {
+      "path": "DnD/examples/corpus/library/CORE_REINTERPRETATION.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76f143d929d2287108221fa6d65ee57bf98b8670",
+      "sha256": "44f313551dc1492ae303a6cbc7bdd02ebf990cf5d80f4aaae39012628154ca12"
+    },
+    {
+      "path": "DnD/examples/corpus/library/CRACK_ALL_IN_MY_LANGUAGE.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af537389db8ea0e25c0fa363e66cb7ce1a25096b",
+      "sha256": "2786cc16ca205ddda08bb0c5282e217bcc6db29eec3e9b83c6df41e9b30f5381"
+    },
+    {
+      "path": "DnD/examples/corpus/library/CRACK_STATUS.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b989e4a258715cf83f97923dad991a06da959284",
+      "sha256": "a0edcceb894bbea3de3136ab2c0896cce43289eb8d8d05db2f380ccb43408183"
+    },
+    {
+      "path": "DnD/examples/corpus/library/CURRENT_CONTEXT_OVERLAY.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb0d4ae5d767eea8825fa4771d6fe63a516b330a",
+      "sha256": "be1987732ee4770d862890fa8fc328ae0a9366829a30db37b5f751dbe86fa397"
+    },
+    {
+      "path": "DnD/examples/corpus/library/DEEH.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c58512d933c0678ed880a95b3e9a799e9f8b21c3",
+      "sha256": "dbc0ff55da9c9da1fdc7d97eba11ea1973854d8c27d2af638f3ed38f35bb2f1d"
+    },
+    {
+      "path": "DnD/examples/corpus/library/ECS_SCIENCE_FAST_CRACKER_V1.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f73c944a8bcaee63fd8a1209654ab5f5cf29342",
+      "sha256": "541ccda1fa21e11ae24b117b6022eddd894ac3e1c5f8554749d0dfb1fdf5760e"
+    },
+    {
+      "path": "DnD/examples/corpus/library/FULL_CONTEXT_CRACK_2026-09-18.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13a2b719e50427da4440c8220484f4806d0b3a55",
+      "sha256": "8e1bf200b27c4c851168ce276596a274f6253d8d456d2430334589a2c61b0256"
+    },
+    {
+      "path": "DnD/examples/corpus/library/GENERATED_PROGRAM.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d8abaf154a728db70745be974cd15f4a90ea3b7",
+      "sha256": "2b30b4cdec4519d46386dcaed29a16bb664cb4b9b4732e580bb64cc8e238920d"
+    },
+    {
+      "path": "DnD/examples/corpus/library/HARD_PROBLEM_CONTINUANCE.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64a278c446ca70d3ea37cdb9106f4150733d9f68",
+      "sha256": "3ac9a8cb7ab1665c13a1b62c3bcfa2f3db414c4be11821d188375499512a2470"
+    },
+    {
+      "path": "DnD/examples/corpus/library/HODGE_NEXT.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a20e58b6f3b5da062a249f35cd2972add3ded26",
+      "sha256": "b88c6c837a92887daef4e208a074c887c3cb9e6d9a8e29224378aeb3fae279f6"
+    },
+    {
+      "path": "DnD/examples/corpus/library/LOCAL_EVIDENCE_CORE.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9353802671528b6af8a9faaae168a573caf827dd",
+      "sha256": "b7dfafdd0020aeec69176a45872bab2d69d9f69c79924b7fdfbad9f796e41788"
+    },
+    {
+      "path": "DnD/examples/corpus/library/MASTER_OF_MASTER_OF_LIBRARIANS.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a713da37cc7f213a35e6b808352a5e6139936b1",
+      "sha256": "df29f5f52b1e4e4e0c3319b850613e4156e98872ed68bd8d95c7000987e40049"
+    },
+    {
+      "path": "DnD/examples/corpus/library/MAXMAL_DYNAMIC_FITTER_V1.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d402f890366d57b73d18be166cf357abb48539b",
+      "sha256": "0bb3ae4dd3403b038919fed9ac2ec3fc59587f6a48ace5d2b68d2a5ed67603bc"
+    },
+    {
+      "path": "DnD/examples/corpus/library/MAXMAL_US_FIRST_BOOK_COMPILED.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "278966df4ab84a8e56d7ed7e22844884b9e66825",
+      "sha256": "482c025cdc4a3b6cc3cede9bc6a2e0d2effa4e4c7a61ff32d9664a577a32dfa7"
+    },
+    {
+      "path": "DnD/examples/corpus/library/MOK.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc433706bf110954ada69b3da6f0d495c01e8cba",
+      "sha256": "37ee885c23ffaee91d70eefb4a3c18afa3e2d48f1ac39bc4e5d2f39f38fcc98e"
+    },
+    {
+      "path": "DnD/examples/corpus/library/OBJECT_CLARITY_ATLAS.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "faa1a521d31b9eb37e37cbc3db25efb7b1d17661",
+      "sha256": "d3d7189102f0209513372ff380c19c9f5f772f3af92186ebcbc28c1ebe721057"
+    },
+    {
+      "path": "DnD/examples/corpus/library/OBJECT_CLARITY_INDEX.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57929b81c5ac3d315789b45b38767c6d3329df10",
+      "sha256": "ff4f97ff09205e1a377fe73a9a1809b171166221f061c9fd9b5769c5ea9af332"
+    },
+    {
+      "path": "DnD/examples/corpus/library/P_VS_NP_NEXT.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bcf02b435026f065488388f3e2d5c0e73ba5f59c",
+      "sha256": "f153bda70bfe931041073286a674c683613de436c732a226fb1f4b1b5a182271"
+    },
+    {
+      "path": "DnD/examples/corpus/library/REMAINDER_STATUS.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "457b0273cb237d6dbe6411a85c2a01eb37ec7d81",
+      "sha256": "17655f629c8b74d0b3731fa90e687e59a353ff27b16d78e4aa082807f1801044"
+    },
+    {
+      "path": "DnD/examples/corpus/library/RMALC.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a097fdf7a0c9428a08c6f23da0dddff927492ade",
+      "sha256": "e12d68c86daadd4631f9add7bf6db003557bc89c599fbc2330a97c36b247b1cf"
+    },
+    {
+      "path": "DnD/examples/corpus/library/RMAL_UNIVERSE.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f5aea593b54870b27db87ef06b7c32dcfb8eca8",
+      "sha256": "dfa67d553d1c7a19a76427e910e62873591a137a34eccb4209b8bdc8e0a67cb7"
+    },
+    {
+      "path": "DnD/examples/corpus/library/SOII_RMAL_PROFILE.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "913f3faee95964f1cfae2da433f143e1249bce98",
+      "sha256": "d144547e61d62e1536ae59ad688bc01883c89a892aa0e68cbaea106a8af030b2"
+    },
+    {
+      "path": "DnD/examples/corpus/library/SURVIVOR_CARRIER_NEXT.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "def0ffa64b6643217d19e0555746ade7009214a3",
+      "sha256": "d3e1bdff8d31299d1a68b8d72e6183e6e5833887f4b76f7100bc5331625f5bca"
+    },
+    {
+      "path": "DnD/examples/corpus/library/adaptive_path_field.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8576d565738a702434834d6bd2fc4be66144845c",
+      "sha256": "0efa1ab14128165f35df87eba3c0e7481a2a163e8d449197d55fc54f2ba8a082"
+    },
+    {
+      "path": "DnD/examples/corpus/library/adaptive_path_field_hodf_pbom.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78952bfd65de25fc1dcf1f3922b388e15d67d1e4",
+      "sha256": "39a8031a581ba8282ee2a7c49d17cfbefb69aa2dc41c314cd76bd16400e29909"
+    },
+    {
+      "path": "DnD/examples/corpus/library/fde_creativity_manifest.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34adfc52fb9763ef0dac119ea9a4674d20623def",
+      "sha256": "c67a90ff0309530bb141fc863a9732a0d8e0237b64f4c77570690a82566cc613"
+    },
+    {
+      "path": "DnD/examples/corpus/library/fde_locality_parity_manifest.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7994add49e644f0fb90cb379a0f5961965636997",
+      "sha256": "2a800313cfc102495e38aa3aa3e4f0da3657b54a2e0f9923eae0eb8094a192af"
+    },
+    {
+      "path": "DnD/examples/corpus/library/fde_v1_2_training_manifest.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8594f75b7b6d3817f3090f7fc21eb4e2e1f973d3",
+      "sha256": "df1d3381dc238f7c6f58b78985ffea5df125256c714f21ba0ea4539712ac37ce"
+    },
+    {
+      "path": "DnD/examples/corpus/library/fractal_native_lab.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4634d09f3044d7f355fdfe9908fd4f30e1d1dbf",
+      "sha256": "4f79f8ba8d3c86e06b45e92a32bd2009382138504dc1ba253fce98c820e785dc"
+    },
+    {
+      "path": "DnD/examples/corpus/library/online_causal_state_machine_executive.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "defc9eee6769b494a0034dae2c92a645ed1f0c0a",
+      "sha256": "a4a70950b00581a8a5a26d8547de91e5bf09a4541339a741f99c4454d16810c6"
+    },
+    {
+      "path": "DnD/examples/corpus/library/plinq_execution_profile.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac2f15481bdca25a1d2f2f434889965fde3eddd1",
+      "sha256": "a594ecdd7935cad5d712da10914457332a2938176d589ca1a8c10bc8100bacf1"
+    },
+    {
+      "path": "DnD/examples/corpus/library/rmal.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d65229373bc4c13d04731e9deb0dff5575f97b16",
+      "sha256": "d17a233d18cdc1120e9a518b0a5393dfd5caabc2ba0e7cfe038b37b68e43c4cf"
+    },
+    {
+      "path": "DnD/examples/corpus/outputs/CLARITY_DYNAMICITY.rmx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7504715602e377466cbf98324c8ff49d191a55b1",
+      "sha256": "1fe672e015c1cea27fdfb8b016dafb7de152c18f861e6089ad66a1461c2c123e"
+    },
+    {
+      "path": "DnD/examples/corpus/outputs/CRACK_ALL_INDEX.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2950b544de0d252a07fbdfc5edb30539f7286bf",
+      "sha256": "fe4db2cbd7cdccb572f10676d19404a62afe3c1bbc977c16489df00f750f6b83"
+    },
+    {
+      "path": "DnD/examples/corpus/outputs/GENERATED_PROGRAM.rmo",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da403ca5dec13ad6d23a7702496ee3f243e90eeb",
+      "sha256": "a560322a1614f1d0949946d752283e40943d71af75f16255e16b62f474b3356f"
+    },
+    {
+      "path": "DnD/examples/corpus/outputs/RELEASE_MANIFEST.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c366d3f4f8eb84b0a929d10cf8f46eca4b738047",
+      "sha256": "a775796b2f3c38f7b1908b4ab349fd92092176d0e8bea9cd43a132b983106a73"
+    },
+    {
+      "path": "DnD/examples/corpus/outputs/RMALC.rmo",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25c6fb4a8637a9c59b707732ad22fda363a93d1a",
+      "sha256": "9215659d73c1463d6026832eba12d2f2c1c542e7a78b74a4898b06ce6ae81320"
+    },
+    {
+      "path": "DnD/examples/corpus/outputs/RMAL_CONTEXT_CRACK_V2.rmx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bc7e0d34a100655dde686939665d4753b99fa9e",
+      "sha256": "900d55e890f0b41c6aae40590356aef107e88f9487d44be8408e0b3544b5c18f"
+    },
+    {
+      "path": "DnD/examples/corpus/outputs/RMAL_META_SOLVER_DEMO.rmx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31ef233899a144ba15fb5ead1c26819a3e30a0b2",
+      "sha256": "dc5f482f2cc6c9584e6227989eecb944825bfa6fb323d600c125b5bf204c412b"
+    },
+    {
+      "path": "DnD/examples/corpus/outputs/RMAL_UNIVERSE.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1040febd3731e29bbe2bfd7eb64779b39314b255",
+      "sha256": "6d154ed887cbaf1f89ef0ae14dedeb5999ea1155f81aa06572276348426fabd5"
+    },
+    {
+      "path": "DnD/examples/corpus/outputs/RMAL_UNIVERSE.rmo",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "993cd0b1151eb4045f8c84f35c86944521dec852",
+      "sha256": "558c83a4d746aad7755025c772f6a87a36ad262b2e5d1e3941c306a96cc722cc"
+    },
+    {
+      "path": "DnD/examples/corpus/outputs/VERIFY_RESULTS.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8ea06f5eb85f5ef11b9c48f6aa4ef2532a55e24",
+      "sha256": "84876c64a3c0655cd1b96fd973b8a6c7510a1f4c15f86dd45b6d79d3d9555310"
+    },
+    {
+      "path": "DnD/examples/hello.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94791b840bcaa42e7af4ad6699eab07a68fc7693",
+      "sha256": "268870cd0bef245bb3ae238822b68023c5470205bee52abe151faf80efad6efe"
+    },
+    {
+      "path": "DnD/history/cpp20/.github/workflows/rmal-cpp.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa28b7602a007c21b511fd73862bff9c0a10a574",
+      "sha256": "2747a8c421850de7b2c822e511467506515eec763b66cab34dac79d7a3abc817"
+    },
+    {
+      "path": "DnD/history/cpp20/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "088a67f8152ba311a9f9057a06b09c7925376918",
+      "sha256": "3bf8f92d447f9dac9a236e169dec6bdedce7e2ab99df2a2753e9621a848c288a"
+    },
+    {
+      "path": "DnD/history/cpp20/include/rmal/rmal.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39b580eaa1aa50aad0c4870b748a6148670fc3a5",
+      "sha256": "34882a699710027d3eed9abd5798bfea2b13a2e624d8c1dd4adc709b205fc498"
+    },
+    {
+      "path": "DnD/history/cpp20/src/main.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70b30572d3b19e8f1ca3eb9baf4365bb3c51621f",
+      "sha256": "1f355bd4b6211d2c863056dab7019e147d250e709ff53833c8ca27b6bfe9b881"
+    },
+    {
+      "path": "DnD/history/cpp20/src/rmal.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13217a614a1520a21890745d3761d7ab82878b05",
+      "sha256": "a977dcee9c3eb590f5f7b55fd75d55534318b7915dc4ac219692f2b2580b1c58"
+    },
+    {
+      "path": "DnD/include/rmal/rmal.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f4c8dd9092eaaeb533bedba402902f16054c8c9",
+      "sha256": "9268d3036acd72297113adf2ab8dcd3ba0883eb31337abe75b7d7f8b69a95a22"
+    },
+    {
+      "path": "DnD/projects/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffbe5f209e15e49a55aa7ab68b649dec9b0729a8",
+      "sha256": "1a028dfdc18f80cd3fa6dfe006f83590aa27739b97f5eba9903faeba056764f7"
+    },
+    {
+      "path": "DnD/projects/decision-field/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a5eea027981ef4d5a53ac00e0eb6f5100b3f9ce",
+      "sha256": "4968993cc3853971c2cb9771df79eaeffe54b5e4d8e800cfbec55d28c2eb2993"
+    },
+    {
+      "path": "DnD/projects/decision-field/CURRENT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d431f35b1c172705bca2d4067a6d4dd5bc9731b9",
+      "sha256": "7f282f0076566884d395e90d5932fefab0e790bd2a6eed1a648fc17d531e9b25"
+    },
+    {
+      "path": "DnD/projects/decision-field/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afe71b7263735de868c60e9d04d23156c1b8fdd9",
+      "sha256": "2b0688d986c73b0db54d52259e47a654223b81d32da43d5864e7d150592a9c0f"
+    },
+    {
+      "path": "DnD/projects/decision-field/docs/ANYFUNCTOR_STRUCTURAL_RECONCILIATION_2026-09-29.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08283af880f6643f4a0a36cbec0b54dd6abbef83",
+      "sha256": "d1976de254dbe641e5fdc2f3fa2cea38e8ab76ff24014e47e70723f457616fbc"
+    },
+    {
+      "path": "DnD/projects/decision-field/docs/DEFINITIONS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3f437edf1ebd991f678098b76e2aec3d0c08949",
+      "sha256": "dea18ff3429cf7a5a15614ef9ff0408bc698d63ff89bbf68880002c50b2173fe"
+    },
+    {
+      "path": "DnD/projects/decision-field/docs/DESIGN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9e2c5db013eee98f0c7b50b6eb1dbca0292a63a",
+      "sha256": "054f2c75ba83c9dbdddfbd7e7aeb32c1172b8ffa7748557db6688e00c02fbd14"
+    },
+    {
+      "path": "DnD/projects/decision-field/docs/MIRROR_RMAL_HOMEWARD.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47b9b76bb07202147c3b165882c94b54fcd58256",
+      "sha256": "5c29e62f0c7384d1abbcd453d31897f76838d8cd0e89148b75a1cb3c4e6b850b"
+    },
+    {
+      "path": "DnD/projects/decision-field/docs/NATIVE_PERSISTENCE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8482e1ebe52ca7bb7f7631b11a9e5a607358529",
+      "sha256": "21c634196285d22334cd12e011e237b3c4dbb9ed5fa5e235dc42c0871be3ebf9"
+    },
+    {
+      "path": "DnD/projects/decision-field/docs/RECOVERABLE_CORE_REPLAY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45ed7c0f0bfa2ba19141a96a5d81305e3cd7ce2b",
+      "sha256": "908fc143dbe15bc06789f0d71bd6bd312cda069aec0a72453c582b5aa887feaa"
+    },
+    {
+      "path": "DnD/projects/decision-field/docs/SEMANTIC_CROSS_REFERENCE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05d5b458c862fe76369547676c88117b328d2dfe",
+      "sha256": "1ee845b15516f9669363d6871d5ea9abf75540882d85987180db78e6d5f01d8d"
+    },
+    {
+      "path": "DnD/projects/decision-field/docs/plans/2026-09-27-directional-component-analysis.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74f5a92160331d06ca58863cc22f59f7d50d944d",
+      "sha256": "54e6c9131d7a49d535eb57ad30a94f0f8231dce3d1ea68119116ae4cc26ee7ab"
+    },
+    {
+      "path": "DnD/projects/decision-field/docs/plans/2026-09-27-native-persistence.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "856224677e3f03b0ee6e2f92e435eb46da8dd06c",
+      "sha256": "b661d20da6e12a22a8134dc250383992cc83ca722c9142295d4c9c7bab267019"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/ADJACENT_IDEAS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0e0f9c9eff8280c7766f2782513a31a7242256d",
+      "sha256": "deed9bbca8acc28b3f7db8919c93cb4d813155217d4569076adbf4620ddec9e7"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/BUILD_REPORT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85ecd7da6eb04ca3800306b291886a630399e7ce",
+      "sha256": "119efea1f50ae6344d4619aa830c15ca22d9b5fc175c53cb539ca4a864627f9a"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/CONVERSATION_STRATEGIC_INPUTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c35f3be89085f0e016be204b7c7231f0c792b39",
+      "sha256": "7159a44db837c1ba0fc2020da1c919a8764fa84709150ca8d60dffb662fd0a9c"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/REVIEW.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eebda0d7b8d7ac7752c912e532bcd4fa91852ca7",
+      "sha256": "b74d1a57970744b3ce3cb2b18e379bb2722e0e8d2f020894f4008c0b751c7f5b"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/SELF_OPPOSITE_REPORT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb5584b115bfdef7674ec10e1c7afe8318267bb6",
+      "sha256": "942dda332c952b87fa34ea768027e7e30577467ffe5cb86d27a710932882cace"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/SELF_OPPOSITE_RUN.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8783cc601bab3e931a7b7446a6d87fef7235dc72",
+      "sha256": "96ea70d11ed84c368e3d99126620227dccb825a211d171f792ad30dadbbbba3f"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/TRIADIC_SELF_ATTACK_REPORT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b7fd1c0e8123a76753354ca6dd3381c1d13f699",
+      "sha256": "59f2b2e6fcd876ef9c06be1e69de723e9d7e329fc0ad800bbc931ffb8a0558de"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/TRIADIC_SELF_ATTACK_RUN.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f937e2cb1c4477d5bbc43747d3871fb619da011",
+      "sha256": "a96e039d9641ea6e3313500c6ec1c1621eba84d44cb3731173ec365b615662dd"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_5/IMPLEMENTATION_LEDGER.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef3fdc42e5a027b638166dd6fa5e7e81c8108f06",
+      "sha256": "daaf3a20ce9ee8a014289193c818421a0e90cb1effad704e7b05ca430814580b"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_5/RECOVERY.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8df76dd361477f6ed208b711cd768f7317f4887",
+      "sha256": "c0505970050bee9d17a5108bc2ed70e984f2681e8fabe78c12be6a1c491cc8ea"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_5/REVIEW.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b567404fc9cdb769bbdab0a705eb847d5584394a",
+      "sha256": "81d5c854d188dc05934c675081faf7848c7dc810d52530f93bec6f768cd31aae"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_5/RUN_LOG.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "227d1d3de852976b0309d3a54052d3a497fba1b3",
+      "sha256": "39e88008d039a3884dbcda4c449d7a171e9bb54777f438e9f0c5a8861e23e401"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_5/SOURCE_MANIFEST.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2635bc6c4b3e49b2bdebf6aec7d7445ba2e58b88",
+      "sha256": "5ca8a958eceabb5e636447888e57299fc6f6b8e51a99ae316cec2c060f8b5f25"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_5/VERIFICATION.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4bee3f8041d47107dbebe34c84cb40238ce29e2",
+      "sha256": "3824cbbdeb3565d967029f716e1f01af18fad15e69d5a051f4de24910d6e68b2"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_6/IMPLEMENTATION_LEDGER.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73ae99062d19c43fc0d14067443efb85f357510e",
+      "sha256": "6fa148812e95e403d92964e510e467a4980cc8b0c6534b1affc5da2f6893d6ac"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_6/REMOTE_SOURCE_CHECK.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ad6b988a48f62a4df4526c616548a5ffa80a978",
+      "sha256": "e2347fbbb9be955fabe364fcddd8cf63a156a7733f38cd53f2f21f08676f4862"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_6/REVIEW.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8b3cdc151a90e73f550e55e108129c51fc3d6a3",
+      "sha256": "16f3e42fcadc6795d0648c3efc14b66893e71d89f32c66d5d4aaf6408b3f4719"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_6/SOURCE_MANIFEST.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3812a7dc4f82f7e6f379e766e31dadd0dc1b916",
+      "sha256": "94a7b3b83cf5531f50f2927cf8cc12efc8bc0b14f3df0cbd71c3f622bbd0bc21"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_6/VERIFICATION.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa44a8321723dd1b3c9bf1279310cb08826183a9",
+      "sha256": "ecca43bf0452459dc13ad9a198ce3ffb3a3384c27620bbc234580d816f8b6618"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_6/cache_key_RED.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8df32133f566c30b802f55cb276117c8ca9c976",
+      "sha256": "b745c0d69b1a75c3ee0876fc5c17b153958d655710dd980490d33e1d643cc6d2"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_6/final_archive_RUN.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a95efedfe17f287620044e29387d78c97e2667c",
+      "sha256": "560702f8118d861b945eb5e92644014947fd3e0909ea29730b8595848689ac1a"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_6/final_debug_CTEST.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b057a68d91dd1790605dbb336f3d390d39e92b06",
+      "sha256": "b518dc648035af5e6dee9d6a731e535c2399874b11a20a763b4c297706180eff"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_6/final_process_HANDOFF.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d1e5fc964631c947c36e7ad65520657d2ff62e1",
+      "sha256": "7a6c57fb54ba14043b72c79615fc7e08b2d7dd63fe4e06978c4ef3a54e1e6f7f"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_7/PROCESS_RECEIPT.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b0ea9a90c8020cba2701a4bde43a269d7367aea",
+      "sha256": "44b054903b40ccfc1d1e0af2c7b9fe8d4e6d680b3fe23abffdc04d08581e151f"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_7/REVIEW.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f487ce827f5414ef46b39413f5a0adea0ea6b0eb",
+      "sha256": "610cd831dd3f77435a736e687b534230ea87fe4403e6a97826dadef4f0ad5b09"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_7/SOURCE_MANIFEST.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bd803597b56b6766c9fa63aea1d9cb3ea7dc093",
+      "sha256": "d89823b8546e347f08c12a34deafeda7357f47e782f556693dd7d2cbadbd77b3"
+    },
+    {
+      "path": "DnD/projects/decision-field/evidence/v0_7/VERIFICATION.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1451a36a384802271781cd46cc992c6fd7b5ba8",
+      "sha256": "e8a7377ccc39dfe7631dc33a3cfc0f57ab266a84d8ac1062b84f8336260d0b30"
+    },
+    {
+      "path": "DnD/projects/decision-field/examples/mirror_homeward.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77b6625e02699ff26cd53fde1b501d038fb94a02",
+      "sha256": "3f11055505d3adf450d737f854d587b1c43ab331eea61475c049eaf20c7518a8"
+    },
+    {
+      "path": "DnD/projects/decision-field/include/decision_field/anyfunctor_mirror.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a87498d659de2a3ba279bd37e6e8d40d2a010e3",
+      "sha256": "aea30f3615f929c774a075413f02545c7c93ba768b2d2bc407c0a8ba611eff42"
+    },
+    {
+      "path": "DnD/projects/decision-field/include/decision_field/checkpoint_file.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cea6c3233e4e381512ebc907446d5697cd20f154",
+      "sha256": "0207890352ddce64e28d12bf242363a844a7a04f47de4a130fe1094ed53c558a"
+    },
+    {
+      "path": "DnD/projects/decision-field/include/decision_field/component_adapter.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6540ab374ac62d466006b3c2af86ac3befed2c81",
+      "sha256": "61fbba7feaaad4c31a8506f8803cdf38f4f5f4dc629117e1832e54f6bc7efefa"
+    },
+    {
+      "path": "DnD/projects/decision-field/include/decision_field/component_analysis.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e01f7f17acca791b15fdd7dab0073b2d0eff61bc",
+      "sha256": "bed6ab4fd84082f38434608b3ca1800e49e201bb73febb00e7953a6a6d498849"
+    },
+    {
+      "path": "DnD/projects/decision-field/include/decision_field/core_replay.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70123f885828976b8f1dcbd3492d20e6e07276b7",
+      "sha256": "29691d43ba45e87dcec3cf759dbfe5e5cf912d432bced518aaf29e22c61fcbaa"
+    },
+    {
+      "path": "DnD/projects/decision-field/include/decision_field/detail/checkpoint_methods.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c55d4c61171214b957573981a81a69202a0f91b",
+      "sha256": "f61a8148e7de7c0cab7c590493da131d22e661c57f033a077da3731d7610f261"
+    },
+    {
+      "path": "DnD/projects/decision-field/include/decision_field/detail/checkpoint_types.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7b474d76c7423faf0258efb0b8e5b7f9e5f3810",
+      "sha256": "ddddbceac5dd42865335f6b37252b62b7f7f18815f20faae2ce9e32676f2409f"
+    },
+    {
+      "path": "DnD/projects/decision-field/include/decision_field/detail/function_accessors.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e34ffdb8bb29b1759ae0200dd1216b96f8c7e6af",
+      "sha256": "a24fd696cb2112c9cefd1058b49871fc69970579cc9c0b718cfa7a322866b94c"
+    },
+    {
+      "path": "DnD/projects/decision-field/include/decision_field/native_archive.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51fa65da2a34a17ad2d1ebd59fd319f5d10663b9",
+      "sha256": "fdddc5cdad1a79791d89c98774bf5cbe49f87ef4edd340922d3d56bc144c5d6e"
+    },
+    {
+      "path": "DnD/projects/decision-field/include/decision_field/rmal_mirror_host.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "573756df1dcb5656d3efeda615ef5215fb404d20",
+      "sha256": "3fba94da88e17f602fa98c368221c942474142b380642caac95cc99198c4c5aa"
+    },
+    {
+      "path": "DnD/projects/decision-field/include/decision_field/self_state_codec.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4beda00187fc72ea39345ef7f00970d6829945d",
+      "sha256": "0a382f639ff72859ac92e49d7ca7d0792f0182741a03be3ecc1d7f89e4b04de4"
+    },
+    {
+      "path": "DnD/projects/decision-field/include/decision_field/surface_component_analysis.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "065c56ca6b4772648bfb8e43750fd649311afc14",
+      "sha256": "10adb40f6e23ce71f3d9625a6245ea08ddfda15d73189fe633c0b323595bc52a"
+    },
+    {
+      "path": "DnD/projects/decision-field/instructions/OPERATING_PROTOCOL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20bbc4ad657bd27c5763a92f2b1102cf4764f807",
+      "sha256": "ef9970231b322c2fa7d2cf6467f27ab0f1953e42eccd061b1eba28efde623aa6"
+    },
+    {
+      "path": "DnD/projects/decision-field/provenance/SOURCE_MANIFEST.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8e1c7885db3b7c904f7121373e596a0aeebbdd4",
+      "sha256": "ad4767a2eeae42346b0dd7f34be697a215ac67751e4dd91d8d23d8abbc7a7188"
+    },
+    {
+      "path": "DnD/projects/decision-field/scripts/check_mirror_manifest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5af7e02b8a57c0edb4f8c6b74fea8dbadfc7e427",
+      "sha256": "cbe1db9a178942d23d18ba3a101799d48787f6675a200144b08a6e9655a70ea1"
+    },
+    {
+      "path": "DnD/projects/decision-field/scripts/prepare_native_engine.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc3d47afa6e036ff2cb42e804c0e87d664b4eaeb",
+      "sha256": "110844bcf4657ec7f388edc55b840cdcb5274bd8ad654c12f41ff2680dbbb6fd"
+    },
+    {
+      "path": "DnD/projects/decision-field/scripts/recover_predecessor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28867444f8fcad187af63dac0123187bf7b0ba95",
+      "sha256": "99632563f6c2a434810acd3f28e21a5b755f018dd4555736772a3c94299b79d4"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/anyfunctor_mirror_tests.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b33a36a56f532c50b999a32c795fc40e0caaa4e5",
+      "sha256": "cf24637c8c9696678d60ec15ec341862b171550fa5bc604d0a9115d956702917"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/bridge_tests.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ecd2a1570fffb8e4d87bd4fde83440952676e0d",
+      "sha256": "a86e097e1dcf990cd09b3da515b34d98668ae67330c1f106571d8c56f44be819"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/checkpoint_file_tests.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7dac9597d7803549df3efecc2f455ec6c83cc1d6",
+      "sha256": "7261b401e5b756a8ff4e469f93c364315a35b7681ac8d5f4499e4fc95a29252e"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/checkpoint_process.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "022d22811d47ee8df0aa960599b1d478c9714f7a",
+      "sha256": "02c2929700a03c609e109784dbda599b5444a1dc317e14e3afd0c5627375c935"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/checkpoint_process_test.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a2e585e2fb8f222886341289017cedc258b04fa",
+      "sha256": "dabd5fc2d760d07722f94f9ec64e6eb532d6fc895eecb2b675a6696e051b832c"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/component_analysis_tests.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31370cc4afc482155c685098916c8b7ad67e0e7e",
+      "sha256": "43a1602df388a12db2ea410ba9e571480e81a63dca40f07f275f3bc2862e4cda"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/core_coverage_tests.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e0cb822ca1d5d42ff48b152ca0a122dc61a0a82",
+      "sha256": "e03d6b4b4788689ca51e17d69e836f5ee8d71d408cead791141d01fe1da45096"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/native_archive_tests.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cb8de4cf9566d16c2841806a11f1b628ecdc56a",
+      "sha256": "d38bfaf645347b8b1b089af777376d8a6480dbc190369eaa14d85d69b11efea1"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/native_snapshot_tests.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "540407376067caeca79df0d14001217476bce456",
+      "sha256": "e22a69cb03c4a85f9a9f863593923655e66cbdda633f8325a23fad9a4f765656"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/predecessor_bridge_tests.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "670f13f33b51ff5ec08dd3c71accc0c340a88c45",
+      "sha256": "9f142f3912f573fc9e4350130963adaf5d6e054fb2a88851756efff900e72803"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/replay_integrity_tests.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45acc31ab5d283f359fd0afe853f4450017b2505",
+      "sha256": "06b1db510bb73cb07cddce5157ea276145b17e4343a0887f61fe4c09fbb5070a"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/rmal_mirror_process.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05bad9a62cfd1df7896b59fe3f07a18d05a614f9",
+      "sha256": "60d74af094d8382bc658b352ca872694791dac931baeda602efd472e934b832b"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/rmal_mirror_process_test.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47428e1329fc26c6848d84c1b38ec8e215daa31b",
+      "sha256": "2ecde90f156fc3ccb3fb3a48b7fd477ec6401d096bc9ab06a685ddc44cd2c931"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/rmal_mirror_tests.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f771fa9e3d12161eed40e1eff941e9b8f862b7c8",
+      "sha256": "fd972cb809fd3aa15baba6bdb97591c5cc0853ce4a088e8f0e490ec2d5c6312b"
+    },
+    {
+      "path": "DnD/projects/decision-field/tests/surface_bridge_tests.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b81f95a6d3602ce159dda7e04f95f50f26b3303",
+      "sha256": "6801cb0e06ef2f93e9b2f61a3d76707d7ceb67cdb2031155d591980841b1a9ca"
+    },
+    {
+      "path": "DnD/projects/origami-g002/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3efc780ae938b9c0728a0e526f3e6f599a99573",
+      "sha256": "8fc2ec746e4402ef9c7444e0714edf62abbe8add6fa75037cca28f46b755cd75"
+    },
+    {
+      "path": "DnD/projects/origami-g002/SOURCE_MANIFEST.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07b5909e65ec7a55c4e1aa6ae0703e066d668311",
+      "sha256": "3274f8c618cfe5346326b8c999a0ca810710ada264a78e1a57ebde57f84e1ae2"
+    },
+    {
+      "path": "DnD/projects/origami-g002/data/RUN_SOURCE.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab9d42dab455feadf6d82513a6d41f1ff001ca9c",
+      "sha256": "0fd58542b9a56f37e94d29f16d05fd848cc10712675db64f1e27c2eea1d0ff62"
+    },
+    {
+      "path": "DnD/projects/origami-g002/data/SOURCE.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77b1a5dde946f4ad6b0006174863c38d327b332f",
+      "sha256": "08591be70a177b0c14ea91311cee65772a45794d7ecec12aa5fae58e18c980d5"
+    },
+    {
+      "path": "DnD/projects/origami-g002/data/approved-composite.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1bd794585a5d223066c7c818c6b7371dbda346b",
+      "sha256": "ef1253042492d2b07969edee47a8bcba14a33a5bd9932ef0d398e722a1dc35e5"
+    },
+    {
+      "path": "DnD/projects/origami-g002/data/google-chart-3.vegalite.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20f3a2ec13399a625607bd87e413e564a4efec3e",
+      "sha256": "c6490842a324397528fd35dc9e83a599458b52dcb39dad57b160f6da6266e213"
+    },
+    {
+      "path": "DnD/projects/origami-g002/data/google-chart-4.vegalite.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7994ae29e99c8fb2799673d1048a03a01cc6eb4e",
+      "sha256": "761048e306447c6cf4616ce031de1b88431c4f06592bfc21eef75ad7179ef9b6"
+    },
+    {
+      "path": "DnD/projects/origami-g002/docs/ACTIVE_DIRECTION.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "552467a0c8a55fb40b4f1dc5e30d9ee3bb99b755",
+      "sha256": "799004f6c8dd9b9ad353faf1c06f7c0ed81073e129915ebb28e04e2b176c772b"
+    },
+    {
+      "path": "DnD/projects/origami-g002/docs/CENTRE_CONTRACT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "756a4f0cdfd0f0ae6f47507cba0ba2981126fd23",
+      "sha256": "5d1443d86bdf5c258ab997be139727454a8d08f4ec7f7a7f9afd2c42bae7ec31"
+    },
+    {
+      "path": "DnD/projects/origami-g002/docs/CENTRE_RUN_CONTRACT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9bae5ca36506ff7f779246b55daadb06b1599f0c",
+      "sha256": "7415d50152830646e6eceb8cf704bbb4ce87baacfe857931839d774c42f84a25"
+    },
+    {
+      "path": "DnD/projects/origami-g002/evidence/LOCAL_RECHECK_2026-09-29.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "666405e02aaca275ddcba93b823648247c05a478",
+      "sha256": "2efda2262271b675ee5e496dd34819833a8d33ce12694e4f904fa9b70dbd0aa0"
+    },
+    {
+      "path": "DnD/projects/origami-g002/evidence/runner-demo.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6925378e7de76bd1685e6f861c530c6dbbb1e888",
+      "sha256": "cfce5aa9983c38d959d651dc73a7f1b514de6cade3f669c17b2902107c99baf7"
+    },
+    {
+      "path": "DnD/projects/origami-g002/examples/centering-run.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9dcaff0019c04d912403a9a8fd1dc12abfc34abc",
+      "sha256": "b51318632d6b1061a67571ebecf42ec923ddfd445fc70da416b0037d61f83c57"
+    },
+    {
+      "path": "DnD/projects/origami-g002/examples/centering.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "875be3a6fb864f480683a559afb6c662ecc5dce6",
+      "sha256": "6f1ac3e7ced05c2416dcf77442c57ac979f539ccaa5f03511a9c2b188064b065"
+    },
+    {
+      "path": "DnD/projects/origami-g002/examples/decisions.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67c67f5f6c52148d1f7d83e68052dec11169bd0c",
+      "sha256": "d3b6bde9bb64f207bbb8cd01393f7a3e48575dbda0c79f55ecb0cc0f0aaa5311"
+    },
+    {
+      "path": "DnD/projects/origami-g002/examples/encode.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc9923986ba265c316485940ddc684c8ad47699b",
+      "sha256": "b430fd681cfa14185de89221c329c4496b975bb15626a4a1295b475b99ac7458"
+    },
+    {
+      "path": "DnD/projects/origami-g002/examples/geometry.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2681cfa9e3aef5f14e6ce95b4b5e1fb44d50856d",
+      "sha256": "047f4b64202c345ee0a1c22dd3221517f3b43ac077cc96ee2449a62714056662"
+    },
+    {
+      "path": "DnD/projects/origami-g002/examples/homeward.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fe28b9b746e7d4a41abfb2066d28fa398362b69",
+      "sha256": "9ddf0fb3327f202ce842fc5ccf44e531819c607f2b105bb16125cdb1a321028b"
+    },
+    {
+      "path": "DnD/projects/origami-g002/examples/rf.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9c2296c19adc25d6c727286e89db37dc6b776f6",
+      "sha256": "1d66c827048821f932fdf94e8d6efe5ee45725df986530c81fa1c95bdfcce974"
+    },
+    {
+      "path": "DnD/projects/origami-g002/examples/simulation.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "496a9d74265fa8164fd1f42af4a9e2a05e88ed5b",
+      "sha256": "0be2de45f46658e751b0cf741c1a4eb26d106215dca06c8bd065244b85caf296"
+    },
+    {
+      "path": "DnD/projects/origami-g002/history/INTERPRETATION_ERRORS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3770d323a709732878a7df1efbe9f1982cd2f803",
+      "sha256": "cf4d3d1374c6ccf9d202f20da2b0615c7ae6a8942e73ae63ae29bc570fcd102c"
+    },
+    {
+      "path": "DnD/projects/origami-g002/native/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3fab48dbfa57eaa6f97f64787179c899f74fa595",
+      "sha256": "16613de417748c154f382927325b726da45446a331e1eb44425bba8aecedd878"
+    },
+    {
+      "path": "DnD/projects/origami-g002/native/main.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8559e0cf9b3d5b13edd905d7c55095297c79d37d",
+      "sha256": "228af9980d263f0484f87cd028471264feef4e1ed23cc68f89535656274e56d7"
+    },
+    {
+      "path": "DnD/projects/origami-g002/native/origami_program.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78594dc63fafc119ff5904ba8e474c2b7ed50ca4",
+      "sha256": "8bb7cbd56ecee51dce9f2a50aa4e3daddfe6227beb3ec62ea73623705195dd41"
+    },
+    {
+      "path": "DnD/projects/origami-g002/native/test_host.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29c3fc1a9cc80230126eececf74b0554e3673998",
+      "sha256": "a5174702e2a69a4f00bafa57a17d049ab017e4ca45b41bb41cac3f805e78f285"
+    },
+    {
+      "path": "DnD/projects/origami-g002/program/centering.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35a3548a83637e4258da827d49905890f41b8293",
+      "sha256": "fa39b90688517182fd70b5dfbf36df00eb354de3d58594ed192190e8cd153ccb"
+    },
+    {
+      "path": "DnD/projects/origami-g002/program/centering_run.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "390445fa5990380b06fa2e16d81694b9de5b4924",
+      "sha256": "69330bb18d7d32409ded408d006b2e34ba0c0ca1e550649f6f7c4f0cb5d0187d"
+    },
+    {
+      "path": "DnD/projects/origami-g002/program/core.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3863e2ebcd0653476baa0b7ab84b90afd2c7650",
+      "sha256": "40e47c6b4e9bfcabdd0e01c5a84a6f3c8c36700da051e088979f9569d3a82919"
+    },
+    {
+      "path": "DnD/projects/origami-g002/program/dispatch.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6f26388a730cd94c5d5c3695f077209e0bd44e8",
+      "sha256": "92393db6389988d4dc4a7e6c4145f17f3e54ef675f26e042c5725e502c437f48"
+    },
+    {
+      "path": "DnD/projects/origami-g002/program/exploration.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f33a5e4b269a785466c61271047e749475a7d955",
+      "sha256": "a4ec539f6745134b293acd0d92524dd38887c0c92b5327c7f9a117ad6aa8ee39"
+    },
+    {
+      "path": "DnD/projects/origami-g002/program/models.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c54987e1de1ee53b96da0d22910503a91f7db7c",
+      "sha256": "c8fc95466f945b4a54098eaf9337d3fa5e1189a88d6cb9e7f750a77e48d8f088"
+    },
+    {
+      "path": "DnD/projects/origami-g002/program/origami.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebca9eaf59505f02cc5aaae129b15ec2b58185b8",
+      "sha256": "6fb0482301b72d3e023e29afddf6cb9f19acfda52b32bdfc96939208052759c6"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c005c406be5933668f3b6576b73a9453913e1bd",
+      "sha256": "8c70b59167c09e51f2f56af83473c144d7d18f1445f171c385ed9af78ef4758a"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/SHA256SUMS",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a20d6230479146cfdd5a953acd777cca461537a7",
+      "sha256": "2ac23beafd140f29b212b6cb9907cd1e6735cd535e1f0506a0a791f1b01b130e"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/SOURCE-MANIFEST.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd3e6fb2f94b2eb1e0c09199b1128279f599db6e",
+      "sha256": "14c65ef8c64039d1176b515d8c6d65941ca6ce6fa7358e5b8a8d7728ed0c5e83"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/TEST-RESULTS.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19b59a82932c77700ab9ba4213ee6c911671b50d",
+      "sha256": "6773e0e60e54bdda695c3692983106260851747e87b49b91e0e9c0c920da95d8"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/bin/origami.cjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "417a975c941c29ae4a63958d404e8d2e0f30af14",
+      "sha256": "ddedcc1766b2638b23f89862273a2363d0ebb9a0ca27e0b3843303444b6e1433"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/evidence/claims.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68d2e0741cdd944b345794ea9738ab596d17d6e4",
+      "sha256": "2c17a3f85656d35f2b1c77c9f943217d34c1f97bc6b379b95b131bccfdbcb015"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/evidence/provenance.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "051b52c53e3e9043dadffa230528452531c4f85c",
+      "sha256": "3fca486a3d5808405262922874b1aa769e796a266c19cbb2376c9ec0a0ed1644"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/evidence/validation-report.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67b7b5d5b4db05809bcfd4a9506e23352c978f23",
+      "sha256": "deb6e43522cba3c1ae3594ccc2b6a814fb2c97ad16e5be21a6cf256541c7bdd3"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/examples/decisions.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67c67f5f6c52148d1f7d83e68052dec11169bd0c",
+      "sha256": "d3b6bde9bb64f207bbb8cd01393f7a3e48575dbda0c79f55ecb0cc0f0aaa5311"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/examples/encode.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc9923986ba265c316485940ddc684c8ad47699b",
+      "sha256": "b430fd681cfa14185de89221c329c4496b975bb15626a4a1295b475b99ac7458"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/examples/geometry.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2681cfa9e3aef5f14e6ce95b4b5e1fb44d50856d",
+      "sha256": "047f4b64202c345ee0a1c22dd3221517f3b43ac077cc96ee2449a62714056662"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/examples/rf.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9c2296c19adc25d6c727286e89db37dc6b776f6",
+      "sha256": "1d66c827048821f932fdf94e8d6efe5ee45725df986530c81fa1c95bdfcce974"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/examples/simulation.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "496a9d74265fa8164fd1f42af4a9e2a05e88ed5b",
+      "sha256": "0be2de45f46658e751b0cf741c1a4eb26d106215dca06c8bd065244b85caf296"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/index.cjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1189ceca486828a6fe740608461ead8d33d7de70",
+      "sha256": "f3c6dfb0d122242c58569da5aee212bdf286a113c1a37920c75fbfc498ed2ead"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/lib/engineering.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0cb8f5f40a0df8953c8644754246867351fe6b1",
+      "sha256": "6d697c27a8b349d9069e74f6942eb781e8265e47186df33a15eee9b6c677fec5"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/lib/exploration.cjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7538e9a6a2da06624629bd4f3a7edb101a8c6180",
+      "sha256": "bfbb2fb99aa06df9259e36c8adf62c81003ee8b69bc928c327a7e8c269ae0af2"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/lib/model.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8ed8890d1c919615ec17892d0128b65f24ad567",
+      "sha256": "57ee9eb1f7a52aade659ba801730e07448cfbf216c9691a44bfb9274f7f1209f"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8318f524b1eefbe6a7d8c1074092ded75275bb7",
+      "sha256": "4662c3c4cd08d44706941707494640690e5a1101a12ec785a198e6a802b9e192"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/source/13D_Origami_Circuit_Full_Specification.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0d9be806f2219e7095b6a1236cf74a881c093f4",
+      "sha256": "27843a1b991399b8f12588d32f79ed92226ed64ad3d9d84b2fe587c5848f902e"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/source/13d_origami_circuit_system.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c1e919bce926438d4c4215ece529dcd4638e8f2",
+      "sha256": "d5bd50f0e9ba3b53f9479467b1ca2f2efcd891fc3e1679f3c6962b2c01c39fcd"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/tests/core.test.cjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c44d7f7584be9b55e2ab7e6387dd77b536e9c5e",
+      "sha256": "50f80669c1be8420399830693956e5bdf12ea1ac9396e667f2dadb811f20cc1b"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/tests/engineering.test.cjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a1e2371b2d1369b1c79bbeb911b5dd7b8f2c6aa",
+      "sha256": "23481e485834460ccdd5ce06b29a1e5157c48d8c2aa177ddad29fa3fd91ddb07"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/tests/exploration.test.cjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01f0b3a5385cd3a4b3411408ce01cac250ba789a",
+      "sha256": "5a13f363c2515692490cd3550224c6c56ce186dcfadf7ae6fe368c3459116500"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/tests/independent.test.cjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "613f47382c812561ee2c9fa4de29ba796fe4ffe5",
+      "sha256": "9de09c68287f0b02814c5d50b67629ef89fa7bb46eeea41f42810d2b8bd1484e"
+    },
+    {
+      "path": "DnD/projects/origami-g002/reference-js/tests/model.test.cjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8dbef7e953f2662088315dc3bacdd549967874d6",
+      "sha256": "9d2e72951b6f59b68c2b141a0ee4b2a583972d2b91c2fee6c887d79672a8bcf4"
+    },
+    {
+      "path": "DnD/projects/origami-g002/scripts/build-gcc13-audit.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16e0102084c3f3295e9c0e44b35e163889332825",
+      "sha256": "38956e2de54686a13babb4c74c797aa5d293ea4957d396bd2966de6b6df21982"
+    },
+    {
+      "path": "DnD/projects/origami-g002/scripts/build.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15d39f1469b407f52c45ef9055c1b82a09047534",
+      "sha256": "0297ea163d3b4a8e2e4267512521ebc7a0a0cb7c589cf48c87ccac32b6703069"
+    },
+    {
+      "path": "DnD/projects/origami-g002/tests/centering.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "034563af92966fe0c5e124b9c6001645199c6c27",
+      "sha256": "ef8fc1b18c80db5deedf72532896a4b21104e3e5399f4e11f6821c07cd0cab46"
+    },
+    {
+      "path": "DnD/projects/origami-g002/tests/centering_run.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf14849c5f0b41bb1a73db4e5175583ba04e6cbd",
+      "sha256": "16c07ab0f0fbd1dfe3d49928fa888fd6687b17520c99ec3d1a5528aaae28d197"
+    },
+    {
+      "path": "DnD/projects/origami-g002/tests/homeward.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "682c61aa80281f29872b6a76cf5d824e3a48668e",
+      "sha256": "653890c78828724250dbf14aa89abacec3994a1e141ffa0f1e663f7de694a566"
+    },
+    {
+      "path": "DnD/projects/origami-g002/tests/homeward_parity.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16eb2880a3b01dd2e63037de3451ab3e83c11606",
+      "sha256": "722b609efe18ec7c7a721bb2066ffed7d42a7c25c018a56e77b582c13a7cfa1e"
+    },
+    {
+      "path": "DnD/projects/origami-g002/tests/parity.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62d899db7cb90b399f60704924b6a28d49265f97",
+      "sha256": "78b4dfd2298dc558cf3d832a85a97ac69d0ec96ae6c6c3706128b48666e7fa31"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd969a41e88af629e3a488b7ecc17ad4793cca5c",
+      "sha256": "ea8d4d914c7592fb51b0896ba88fb8321e425bd00c3415654ec77d72ec9b73ca"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/CURRENT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51ad1a5545797ddfe08017b73a2cb8f9d3e27f0d",
+      "sha256": "5113def7bb82aaea659a2f79c5e1292462c69bc7ba15bda2ce742eafb0f43fbc"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9796d53779c29a8d11695b24d37e950f76cc90f4",
+      "sha256": "e03529e73fb7c0dc115876c3558830c8f59fa402b6decaaa708ed0ac6a020ba7"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/README_COMPILER.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "234c64a1dcb8338d75b76e4906e576abf7bc9c45",
+      "sha256": "9c3fd0245ccaa5ff9eafadbac0cf1a236b9e4b529f5a64aa640ffdb36cf3a6fb"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/docs/RMAL_C23_WINDOWS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6dab947c6f9bae29c24d6a1c8dae7893331e5650",
+      "sha256": "967445baf9de8c33b3fbf8c2e6a7c66911c41d06c915b436f85a8e5276ee4185"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/evidence/RMAL_C23_WINDOWS_VALIDATION_2026-09-26.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "590363dea1fb633eb68ce728e04e6d9cb894dd39",
+      "sha256": "b94ea55130290fb2a9c3b1e6a48845ae85b7b6774a15b2f616210e8fbfbbe15c"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/examples/hello.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94791b840bcaa42e7af4ad6699eab07a68fc7693",
+      "sha256": "268870cd0bef245bb3ae238822b68023c5470205bee52abe151faf80efad6efe"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/include/rmal/rmal.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87754b46ec6e902c69e64abcdcbfa0b541661540",
+      "sha256": "ef050981cbd054a6dcc49344fe31a5a1dee81e44455a5936f77468d4ff63ffba"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/spec/RMAL_EBNF.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33504efbc3a84fa2a6a132547e5e9d14de81d8e7",
+      "sha256": "40722c989d0a69270928c20bc77583725e4b362101c5b8b0e9a0c658b7e1c07d"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/spec/RMAL_LANGUAGE_SPEC_3.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "819b30348fb0b9df0f81e92e9456e94c36096231",
+      "sha256": "2242d3eafcc1d12afc86565bf4a581cebcc1fd19eb9a295498b5a2e4e282eff0"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/src/c23/part01.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38d204f206158cb19482ccafcaff37aabba3271d",
+      "sha256": "dc171d1590ae64b91ffc35dae43787f904c88330e308519800cd03da249c1057"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/src/c23/part02.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e64c387ff39bae3aae0ada238bf2dc165ddc3e74",
+      "sha256": "1402f026252b5511e102795e28aa41a448135c3d7597442ccaca2b21c34f7d29"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/src/c23/part03.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7ca75934991d0ed857493e0d06ab932fede2cde",
+      "sha256": "a57e241c31d355905c2e8f5dd9f877c8a6ebcc18a369b24e69bf3b67a491f893"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/src/c23/part04.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8b6d7823cb3d373577b155d20d881bb5f90aa4f",
+      "sha256": "00656fef55b86997d98cec89b0cbb58a989344a9dda904de99c2215c24362783"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/src/c23/part05.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc5cf3d54b05cb928ccc0a51d4adc0229162c16f",
+      "sha256": "bb3d90aa12e96a954823103ba4fdc0972c1f6a525f8fde1991b52862a5d2ecf8"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/src/main.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba7132f9f3e109c279170259edbe1ce47b17fdaf",
+      "sha256": "a3f05056af8bf4153db78f96357c40e128ea53490718c9af1b1a5d9b22a5afe6"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/src/rmal.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0cd59e86468822090f7b2c0a36fc8c4b32c0f67",
+      "sha256": "a2f514e8f84106614d0ee65f84126e64a7fe5b96562e2e4d2e63d296b1acde42"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/tests/const_immutable_reject.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "034ad5da1ef481eca8796da13af94d3b0ad4c235",
+      "sha256": "cc5b95889aa4e003b3fe4437b74c7f2965e0614b6b0f507d850147c575c27112"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/tests/legacy.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30ce4bf3f2849090aacb6edbcd97d60ce361600c",
+      "sha256": "718ed316da33753a7a7b096fcff713e66173c57c41799d568fb4544f2f64f1d8"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/tests/numeric-extension.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2761c27d4a8f0b345040b09f2b3de0a1a50ed291",
+      "sha256": "8306c1f79014727d9102fbbedf606cbb67cd54c60e79eb1c1ae1e1b4f5c7d94c"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/tests/numeric-host.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de4809c48334677158d745a029d1d2c929d8d8e4",
+      "sha256": "e143fc7c5388d672cba94b023bb4b7fcf58d9062c8a25793b053c5b87e48eea6"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/tests/recovered_surface.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e663ce496695d4f45553a2161f4f43977afd2ef",
+      "sha256": "0ac6f28da1f0905a21ff59264bb334d4d15060fbdecd301f3a3d776baade8bc2"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/tests/test_w114_sign_normalization.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adac68797ccbbf9869b75ae12be02b9fa9dc4380",
+      "sha256": "becefbadf73ea54cf0bb5312b7533cfd4536d4070b1f0b8350f99a3074056cf4"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/tests/typed_equality.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05de5c7db6fe30c4da314e17cdda51c63583c303",
+      "sha256": "a0281524e4963fcf98a44faac89c0037a508363669bfc532532509caa11b6d70"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/tests/verify_dynamic_rmal.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb4f8cbd73d86378ed21dcaad1ede850f321b2ca",
+      "sha256": "e39f0f9de1b86fe9ee6510410870cac2440186042ce8c9130525397bb9b2eb4d"
+    },
+    {
+      "path": "DnD/projects/origami-g002/toolchain/tests/verify_w114_sign_normalization.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84cfb10381fd0c9c59f49d94b1d37e0abec80821",
+      "sha256": "e4abfa95e57eb8a948cdf2e82c79b3200be2b34cc80d2d4cb5cc3c348377243c"
+    },
+    {
+      "path": "DnD/provenance/Other-Projects-/.github/workflows/rmal-bidirectional-response.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab8a1e5d816d0e3af342cef005c0eb0a0957a41b",
+      "sha256": "609969e770b5175e6c11ec0b572cad84fb0a83e67fd94e9389860403c9532d10"
+    },
+    {
+      "path": "DnD/provenance/Other-Projects-/Decision Field MMORPG/DYNAMIC_RMAL_CHARACTERS.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6b86d1c81479b742134ee08ca9e83b087afcf9d",
+      "sha256": "df358562307db099a8bdd14da7312a22bef3138069c0ab24e244f8f73b96d053"
+    },
+    {
+      "path": "DnD/provenance/Other-Projects-/Decision Field MMORPG/verify_dynamic_rmal.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb4f8cbd73d86378ed21dcaad1ede850f321b2ca",
+      "sha256": "e39f0f9de1b86fe9ee6510410870cac2440186042ce8c9130525397bb9b2eb4d"
+    },
+    {
+      "path": "DnD/provenance/Other-Projects-/RMAOS MiniGX/circuits/w114_perturbation.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f73de2f53acf70e33967a336e75015ab8601b4aa",
+      "sha256": "2f234c3840ec6c30bb3b4ef096efbc560d5ab6d9b525154c2db44c20662eb363"
+    },
+    {
+      "path": "DnD/provenance/Other-Projects-/docs/RMAL_BIDIRECTIONAL_HANDOFF_RESPONSE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8530dec30f553d1de2b5ff4a3783964eaf5750a",
+      "sha256": "0adbc1d7ecfd9dbd80011ff6d443f0af9965cc0828e6b063d952b850353744ad"
+    },
+    {
+      "path": "DnD/provenance/Other-Projects-/docs/RMAL_BIDIRECTIONAL_HANDOFF_RESPONSE.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae6147ca1c706374f52dd9675c842d51d4bdc0e6",
+      "sha256": "d4746660fad79457724e09a9e48ff4cc3ae4a22b627ddb44032b165ce66c67c9"
+    },
+    {
+      "path": "DnD/provenance/Other-Projects-/docs/RMAL_COOPERATIVE_IMPLEMENTATION_PROTOCOL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8cf831a1d2584d40a1e249aa631685a489ed204",
+      "sha256": "a16e971c244c86c1d7e64375eb0fb8cf606d7a7e47064bb145545dcee58298cc"
+    },
+    {
+      "path": "DnD/provenance/Other-Projects-/docs/RMAL_COOPERATIVE_IMPLEMENTATION_PROTOCOL.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb7725c1e22db3c2b8a342687a7ed7fc5f8ffd17",
+      "sha256": "0b5301d6b4f1fb185d0a97fcc2e826ccd9770041574e31cb750a73e985d6d1c4"
+    },
+    {
+      "path": "DnD/provenance/Other-Projects-/evidence/RMAL_BIDIRECTIONAL_HANDOFF_RESPONSE_2026-09-20.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b222c3820b86f0e57fff008d40367e221360bcb",
+      "sha256": "1dd7fb040354183aeb7ce105db54662a252c3481305f9435aeb3f50048a2c5b0"
+    },
+    {
+      "path": "DnD/provenance/Other-Projects-/evidence/RMAL_COOPERATIVE_IMPLEMENTATION_PROTOCOL_2026-09-19.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c6907e0dcf3e5815f5d07d322a9bf2a8dd94418",
+      "sha256": "c3f4f4763fe9f3e6d74ee9d4a2786c62281d98cf5c934cf07b7cc6710d5e7033"
+    },
+    {
+      "path": "DnD/provenance/Other-Projects-/tools/check_rmal_bidirectional_response.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0708f2388168bf47aab5b1bbe35c42ef1dffb151",
+      "sha256": "c03565e4189681c36cfe7d7e0cfb2c55ff06c4680aed44443d79e1808f2587e9"
+    },
+    {
+      "path": "DnD/provenance/conscience64/RMAL_TFEML.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c39bcb40be3aff21c09014f501d14ec040ea7616",
+      "sha256": "b5ca8cbd821ded6ae0e8a471863c9b3e2604f8edae10a6bafd4d627d52b4b8fa"
+    },
+    {
+      "path": "DnD/provenance/conscience64/play/mmo/DYNAMIC_RMAL_CHARACTERS.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0078e73143b3e1a706b28593f0ffab499942554b",
+      "sha256": "2f942ba5d877f451338bd4ceafc3b4f41e9058ce83d64ce6a812beccc203b15a"
+    },
+    {
+      "path": "DnD/provenance/conscience64/play/mmo/RMAO_WORLD_CANON.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efd7d8b31fa41943e0ebc8231c19ec48aeb07878",
+      "sha256": "7e48bf78ea92da03507b783fbc4259ef92b8361caf42a8d3f86d1255be5e089c"
+    },
+    {
+      "path": "DnD/provenance/conscience64/play/mmo/rmao-world-contract.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7d78961ae273fd1a0b76419418c0efa34d60998",
+      "sha256": "933f50e608434550d0713403fdd79a2275ecd528ff8a3be43f053abd6924b2be"
+    },
+    {
+      "path": "DnD/provenance/conscience64/research/cooperative-field/COMPANIONS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5139fc32b3b367d89c4c77eac5b3b53674e692f3",
+      "sha256": "861f4ca1b54baf11cda82ee5a29850210be057e8208e1539a160ae4f3dd9c19e"
+    },
+    {
+      "path": "DnD/provenance/conscience64/research/cooperative-field/CURRENT_PLAN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "818eed634d57be4a329d1ef2279a0136daa34647",
+      "sha256": "2c5c53876c5aa804731648f5bcf42c93d56cc8f4228e4060b701de2a2e385c41"
+    },
+    {
+      "path": "DnD/provenance/conscience64/research/cooperative-field/EVIDENCE_LEDGER.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4598abd6835ef715cb5fae72e6aaf257d017cd8c",
+      "sha256": "a8bde10be26265313471711cefe392e1d696b528e1349ea29c7a2989d7d6ab35"
+    },
+    {
+      "path": "DnD/provenance/conscience64/research/cooperative-field/LOCATIONS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61793f4b871e893b223fb5b51a51c34a0c127d7a",
+      "sha256": "ec082667516875ef19a4fb3152d6eea92e8f820b411975834a2865f06a4130ed"
+    },
+    {
+      "path": "DnD/provenance/conscience64/research/cooperative-field/MEMORY_INTEGRATION.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b97337a7d8c84fd2af9c802a99f215d8109e5dc",
+      "sha256": "60d0a55830444cab194685d40402a1a091540567df04dbd33bd9081d5b6713f1"
+    },
+    {
+      "path": "DnD/provenance/conscience64/research/cooperative-field/NAME_LINEAGE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5de12f9c1875488a132e931057e6214044520461",
+      "sha256": "1f4ac3c2aaba1cdc932078d9114ec0b2c9da0f34c6488232602e5c807e765e2d"
+    },
+    {
+      "path": "DnD/provenance/conscience64/research/cooperative-field/STANDING_RULES.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a90a3ade029e93b8343e56f4686387f7ac65720e",
+      "sha256": "84ed7ca951e56ea997c201d7c6d5f97460655f366567a630da992c0b0b5a64ec"
+    },
+    {
+      "path": "DnD/provenance/conscience64/research/hodge/W114_SIGN_NORMALIZATION_CORRECTION_2026-09-25.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b365dbdf8784958038389407ac6bea49d2196f3",
+      "sha256": "efd343543f406fe148e2d8fcdfb16f92f9565c117364689aef36b6b57eea9472"
+    },
+    {
+      "path": "DnD/provenance/conscience64/research/hodge/test_w114_sign_normalization.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adac68797ccbbf9869b75ae12be02b9fa9dc4380",
+      "sha256": "becefbadf73ea54cf0bb5312b7533cfd4536d4070b1f0b8350f99a3074056cf4"
+    },
+    {
+      "path": "DnD/provenance/conscience64/research/hodge/verify_w114_sign_normalization.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84cfb10381fd0c9c59f49d94b1d37e0abec80821",
+      "sha256": "e4abfa95e57eb8a948cdf2e82c79b3200be2b34cc80d2d4cb5cc3c348377243c"
+    },
+    {
+      "path": "DnD/provenance/discovery/RMAL_GITHUB_DISCOVERY_2026-09-26.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d2e9662973583e40f316c481c2bab78bf041e03",
+      "sha256": "59ca3ecf01d8d4d86081e017725eaea556ef2c62f3315a660257256956239268"
+    },
+    {
+      "path": "DnD/provenance/library/CRACK_ALL_IN_MY_LANGUAGE.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af537389db8ea0e25c0fa363e66cb7ce1a25096b",
+      "sha256": "2786cc16ca205ddda08bb0c5282e217bcc6db29eec3e9b83c6df41e9b30f5381"
+    },
+    {
+      "path": "DnD/provenance/library/CURRENT_2_1_1.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "489ea97c4f09bece4976e79bf2e2b30566d00ad8",
+      "sha256": "4ff5f8b4a78c7e78ddd5b9cf99939cfd70974791fd82da65b366d0fb98b698be"
+    },
+    {
+      "path": "DnD/provenance/library/CURRENT_STATE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b51b13623cf2aebe8075e93c90831fc61ad1ea02",
+      "sha256": "0848783c1dfc9dcadc567f55b05c012e62d10d0a9eaed05830a1f008e1877c31"
+    },
+    {
+      "path": "DnD/provenance/library/LLVM_STYLE_TOOLCHAIN_ARCHITECTURE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d3d316c2f7a65b1f18af04be3cdef67e620accd",
+      "sha256": "d669dee4660fbc99a9a8b13d8146eb231b7699aa328c254e866de40c343e83d3"
+    },
+    {
+      "path": "DnD/provenance/library/MASTER_COINED_NAME_REGISTRY_RECOVERED_PASS4_WIDER_DEEPER.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e94e8d710fd413092cb10045d34c3dc3aa277187",
+      "sha256": "e9ab68b6f00a42e7f56a5d8a08d528366aeaf17c2f0af688f3e24f6fc420600a"
+    },
+    {
+      "path": "DnD/provenance/library/RESEARCH_CLAIMS_BACKBONE_2026-09-22.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c7ac3e42d705e695f2d18d20963ec52d684c8de",
+      "sha256": "6b18a72543d71251c4ca49d9c9646c3ce13007b8f025440d244573dbbd64be4c"
+    },
+    {
+      "path": "DnD/provenance/library/RMALC.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a097fdf7a0c9428a08c6f23da0dddff927492ade",
+      "sha256": "e12d68c86daadd4631f9add7bf6db003557bc89c599fbc2330a97c36b247b1cf"
+    },
+    {
+      "path": "DnD/provenance/library/RMAL_LANGUAGE_SPEC.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bebe19a8320e7c50a6e87b69bb0bd1dc3a129911",
+      "sha256": "73d7152e1e8a4ffd8bbce51b21dcd0767f2c45f88da3022bae0edd8d975bfbc4"
+    },
+    {
+      "path": "DnD/provenance/library/RMAL_LANGUAGE_SPEC_2_1_1.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bebe19a8320e7c50a6e87b69bb0bd1dc3a129911",
+      "sha256": "73d7152e1e8a4ffd8bbce51b21dcd0767f2c45f88da3022bae0edd8d975bfbc4"
+    },
+    {
+      "path": "DnD/provenance/redogit/BIDIRECTIONAL_HANDOFF_PROTOCOL_2026-09-20.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bcd3fd0c7bbc9b587aa8ce3940492dd8280ff03b",
+      "sha256": "2f76b56fefb694a8daa29a1653e1afe1e8efda54eb753e4215b13f2ca821c9a2"
+    },
+    {
+      "path": "DnD/provenance/redogit/BIDIRECTIONAL_HANDOFF_PROTOCOL_2026-09-20.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a83ce19577ec179ef446b3eebf898f26c40635b5",
+      "sha256": "012b49041fb57decb03fc8593af9227e5aa1239d8b663f24466adbe613b0e091"
+    },
+    {
+      "path": "DnD/provenance/redogit/COOPERATIVE_IMPLEMENTATION_PROTOCOL_2026-09-19.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ab6cba09ed57450f9552ad352e284ed249c4fe4",
+      "sha256": "3063e2720247852fcbc42c50360327e5c92a13055149fd3368bfb9e6186f1b1b"
+    },
+    {
+      "path": "DnD/provenance/redogit/COOPERATIVE_IMPLEMENTATION_PROVENANCE_2026-09-19.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d869d053b6e8ba2b3f9f6d9400a94dec6160cff",
+      "sha256": "fe54332a55403ef3a095815401bcf2de0ba41e8c8141d9913f6591f7f83c9538"
+    },
+    {
+      "path": "DnD/provenance/redogit/DECISION_FIELD_CORE_2026-09-17.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "410a02a191f00dc88089f4cc7311ee5395e529d7",
+      "sha256": "82d7fd1e105b5286c2c99b5f5c8363bad530ee90a3e92bfcfb1cb4801c810407"
+    },
+    {
+      "path": "DnD/provenance/redogit/GITHUB_CONVERGENCE_PLAN_2026-09-18.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "394ade812cca09b1ff954fe38687b8a0cc0cb3b4",
+      "sha256": "5469f329eca9d6442fb3969eb02ac4e0380c594f8f8604fa8ae6d98bacf225f5"
+    },
+    {
+      "path": "DnD/provenance/redogit/GITHUB_CONVERGENCE_RESULT_2026-09-18.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "215bfd72fe480d7f5fd076bf856db51eae7ad70b",
+      "sha256": "fabcc29d3cd185e48679ba4619e29b3069f1a8a9f06db1232583f3406154681e"
+    },
+    {
+      "path": "DnD/provenance/redogit/LIBRARIES_OF_LIBRARIES_GIT_LINEAGE_2026-09-19.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67ce9208c86d28d5d4808c61d9c0d995099d10b1",
+      "sha256": "6cc78d36c98ded36350c810230ac02b2aa02b5764b3cad4491c46209849cbc6e"
+    },
+    {
+      "path": "DnD/provenance/redogit/LIBRARIES_OF_LIBRARIES_RMAL_BUILD_2026-09-19.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6cecb400d79818bd570d7eede8dfd6de907a6dc2",
+      "sha256": "e89f26f1dad04802fb281a7db4e0f20a41b6f7b7c3fad6b44c2b35455c6c5596"
+    },
+    {
+      "path": "DnD/provenance/redogit/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "029a90c64f6484d1de05cb2d30d6045c57830f50",
+      "sha256": "eeb330a4d581dbe00eb9e45869b117141a391c61ce0397ab11f7f5533bfd1004"
+    },
+    {
+      "path": "DnD/provenance/redogit/RECENT_WORK_2026-09-25.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c338d8de5698d4de4a8aa7be2ed949c0774e759b",
+      "sha256": "73daa6236d8c3db41f9a9df8f0a07ad80fa8ba301b359fafb434e1b0a58a821f"
+    },
+    {
+      "path": "DnD/provenance/redogit/RMAL_PNP_LIVE_DESIGN_2026-09-25.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e4b014879eaccab434c999cc78dff462f405b43",
+      "sha256": "611efc7982c47b17946c7ce6d47c52ee560fc007d9f08dbbd3f8d70aa9de2800"
+    },
+    {
+      "path": "DnD/provenance/redogit/RMAL_RESEARCH_ORIENTATION_2026-09-25.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e74d1b3f4f49d9831aa00f2831a953a1c3e691a",
+      "sha256": "fcfdc4815a6285ce33a2b6474721e409f7e9c164201dc808ccf8347fffeea1b4"
+    },
+    {
+      "path": "DnD/provenance/redogit/WORK_INDEX.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c6cc21e08ca54448568fce2acbc6dec9a13c8e1",
+      "sha256": "a961c2e300199a2b228fa3e724cae52c04ee0877f44e3f00721cd251f87d4ca0"
+    },
+    {
+      "path": "DnD/provenance/redogit/libraries-of-libraries.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c01e1a2a5273775c6091d4f810d619dbe4bfad7",
+      "sha256": "efa67c0ce9cff2047c7a7c6dbd045d34f7624a866a5fd5b1cc5456ea556b043d"
+    },
+    {
+      "path": "DnD/provenance/related/conscience64/docs/interlingua-linguistics-agreement-system-design.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5aae313cc0319448e11aef84dcb445fb5122937",
+      "sha256": "a409105ffdaed4ba3a7c542e26bc6a2805540754695ed297411b5a9d58419e4d"
+    },
+    {
+      "path": "DnD/provenance/related/conscience64/play/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd07fe267ed451196edd13e2a7e3236c84e88b8c",
+      "sha256": "0616d5d98a2b4fc87aae8af08a7eb41358b8616b1e1c754e09bd4cb2268dcd2b"
+    },
+    {
+      "path": "DnD/provenance/related/conscience64/research/bridges/libraries-of-libraries/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afd0f0db27592bf58769973e5a194111297e5586",
+      "sha256": "20f398ca31ca4bd00e2051e5e61f956ff862b4f6002862a2e277e254fc44cfbc"
+    },
+    {
+      "path": "DnD/provenance/related/conscience64/research/carrier-surface.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05e29d7e10caf55e06348bf8772f25a40618b605",
+      "sha256": "3983a085637e6ed96762fd079161f92572913bcd34b9e10213c4be910f90fbba"
+    },
+    {
+      "path": "DnD/provenance/related/conscience64/research/hodge/CONSCIENCE64_COOPERATION.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3ed4f17ac39ae99c241f80096ac3ceabeba549f",
+      "sha256": "af112f1b75b6192b52b5580e3a761814e1a4e8a354da529449efb1924714d176"
+    },
+    {
+      "path": "DnD/provenance/related/conscience64/research/hodge/HODGE_COMPASS_API.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e40b0e0939f01dbb73df1cee908f543cb8bf9b74",
+      "sha256": "7a2032ac0a7a593bf77c85d4a9d9f6a70d57842abc1335f8f18b4e524fc1bb75"
+    },
+    {
+      "path": "DnD/provenance/related/conscience64/research/radar/CONVERSATION_WIDE_RADAR_LOCALITY_PARITY_2026-09-20.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd7bc2a3cd509ca3ba047d42d2bab096d5049a85",
+      "sha256": "5f2463a66fd52e91b3438670484e989483018ed95de2d2e1d6874dcdceca427b"
+    },
+    {
+      "path": "DnD/provenance/related/conscience64/tools/HYPOTHESIS_ALGORITHM_BUILDER.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a43fe7ffdc98b046f3e7b2c8c7c57cd78a7498d5",
+      "sha256": "116f2e72011644663026ec80c7658183821a4cede924e7f3d49139bc008fe74c"
+    },
+    {
+      "path": "DnD/provenance/related/redogit/ALL_DIRECTIONAL_RELATIONAL_FIELD_2026-09-20.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66ecfb881045be1d707476d2e5227b1a786194e8",
+      "sha256": "7dfa2f512fba2f3feaf59341bde01681b93f820f1cf5332cf8fcfa4422e4bb4b"
+    },
+    {
+      "path": "DnD/provenance/related/redogit/BODY_OF_WORK.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1aacea356d6cecdf5d9efb08fd9e9261040ef876",
+      "sha256": "0ddee3e1a66185cca7e821e1fe18d05c5ec2d23279f76414fef590e0747ba90f"
+    },
+    {
+      "path": "DnD/provenance/related/redogit/DECISION_FIELD_THREAD_SYNTHESIS_2026-09-17.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8608ae4cb4a62ad4ad696239b893bd83a66cffa6",
+      "sha256": "6af224946529b311a1377595cf74e5ab04a5a78c2fe4e26651628cf76ce9166e"
+    },
+    {
+      "path": "DnD/provenance/related/redogit/FEDERATED_WORK_INDEX.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e96e9207d0a92fd8bf434a0455c28a8e354adbd",
+      "sha256": "47b063db4068aad6388f8093ead6dea65f31fd469aa9e682d68b5c7cf369b347"
+    },
+    {
+      "path": "DnD/provenance/related/redogit/PNP_SIGNED_BINARY_CLUSTER_CARRIER_2026-09-25.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7729ab5d70b55e5c6960f458c39d87813fce8a00",
+      "sha256": "5dbf5ada2e26469c5ebd925ba6492a2f484be6d3013c0a3047467aed09961563"
+    },
+    {
+      "path": "DnD/provenance/related/redogit/REDOGIT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e362a94b1f1dbbc617105d880a0c257c11f6fcd9",
+      "sha256": "3c8a72bd73d7ad722f5c47bf69cb725b14efe2518c55321cfb1ea7fba2e0a6d8"
+    },
+    {
+      "path": "DnD/provenance/related/redogit/RESEARCH_PRODUCTION.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4869d15f88b436996f87f56f51db0b2523327d40",
+      "sha256": "03bdc6aad707700cc8f56450692d97edecc2559dd8d217b2b3e9decf0d521c67"
+    },
+    {
+      "path": "DnD/provenance/related/redogit/RESEARCH_PRODUCTION_FEDERATION.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2716ab75a71d491fa60d83b360a8f2fbd1d0581",
+      "sha256": "9fa4f563957f07b28fac7d1c54691f749150521473ad075dfdcc430abf6a24a2"
+    },
+    {
+      "path": "DnD/rmal/DYNAMIC_RMAL_CHARACTERS.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6b86d1c81479b742134ee08ca9e83b087afcf9d",
+      "sha256": "df358562307db099a8bdd14da7312a22bef3138069c0ab24e244f8f73b96d053"
+    },
+    {
+      "path": "DnD/rmal/RMAL_BIDIRECTIONAL_HANDOFF_RESPONSE.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae6147ca1c706374f52dd9675c842d51d4bdc0e6",
+      "sha256": "d4746660fad79457724e09a9e48ff4cc3ae4a22b627ddb44032b165ce66c67c9"
+    },
+    {
+      "path": "DnD/rmal/RMAL_COOPERATIVE_IMPLEMENTATION_PROTOCOL.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb7725c1e22db3c2b8a342687a7ed7fc5f8ffd17",
+      "sha256": "0b5301d6b4f1fb185d0a97fcc2e826ccd9770041574e31cb750a73e985d6d1c4"
+    },
+    {
+      "path": "DnD/rmal/libraries-of-libraries.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c01e1a2a5273775c6091d4f810d619dbe4bfad7",
+      "sha256": "efa67c0ce9cff2047c7a7c6dbd045d34f7624a866a5fd5b1cc5456ea556b043d"
+    },
+    {
+      "path": "DnD/rmal/w114_perturbation.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f73de2f53acf70e33967a336e75015ab8601b4aa",
+      "sha256": "2f234c3840ec6c30bb3b4ef096efbc560d5ab6d9b525154c2db44c20662eb363"
+    },
+    {
+      "path": "DnD/scripts/build-windows-c23.bat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3afce61c15486ea3c061fbcab3c0cf101edb5863",
+      "sha256": "6d7651b66d7287fa2ae63e21455c27116d28dae85704f4cb86bbba86b05a902e"
+    },
+    {
+      "path": "DnD/scripts/build-windows-c23.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dec67cbe84d78c099f978777960468f82fa72bc4",
+      "sha256": "4c4c9548289a99450bb0873db14b5435afb653d102aa9d4c99ac379067dc689e"
+    },
+    {
+      "path": "DnD/scripts/package-windows-c23.bat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b8f0cf63d3f8232dc4bdf559180ebd06164e566",
+      "sha256": "ae2a0742304253c7c50bb071244ddea5e3732501581b6323fece47bf2d1892d4"
+    },
+    {
+      "path": "DnD/scripts/package-windows-c23.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "911f079be5738efbcdbf247a17e6f67694fa5d47",
+      "sha256": "3a7e8230e4370f1470cc1f16f620e47e1eb15eabef8e77f7168e920fb39f706a"
+    },
+    {
+      "path": "DnD/spec/RMAL_COMPATIBILITY_MATRIX.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b933c0cd6ce6d7981100d5a3d9f147a4352060a2",
+      "sha256": "ee0b0b59dc8bc42784adb0654a44ff77a98df471fa1e9db5952554aa0424f73f"
+    },
+    {
+      "path": "DnD/spec/RMAL_EBNF.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33504efbc3a84fa2a6a132547e5e9d14de81d8e7",
+      "sha256": "40722c989d0a69270928c20bc77583725e4b362101c5b8b0e9a0c658b7e1c07d"
+    },
+    {
+      "path": "DnD/spec/RMAL_LANGUAGE_SPEC_3.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "620ae957ae56145349366409117b51df46cbd42f",
+      "sha256": "52d838d41f1e3ed2d3f0ad45e887418f64812d1cab4f8b19db4e2cb816e25b6b"
+    },
+    {
+      "path": "DnD/spec/RMAL_LANGUAGE_SPEC_3.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "819b30348fb0b9df0f81e92e9456e94c36096231",
+      "sha256": "2242d3eafcc1d12afc86565bf4a581cebcc1fd19eb9a295498b5a2e4e282eff0"
+    },
+    {
+      "path": "DnD/src/c23/native_vm.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ef62586f3acdbf00e36a659aa9add1048babd9a",
+      "sha256": "1b0fe5db1f82e8a0de09867ce6f4923f879f177899193747f47019d9dd21f6ba"
+    },
+    {
+      "path": "DnD/src/c23/part01.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd649682b009b6291faed13a1111da146578d6d1",
+      "sha256": "7fc2c42efc10143e276fac4d555bd99a061d93a3d85391631ead42aad55b9abb"
+    },
+    {
+      "path": "DnD/src/c23/part02.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84efe37bae9ed1ad1a05f31d9497bc1072962411",
+      "sha256": "cae4c3ec17114204f573050d61c78949e9f66f4c81ccb094e208ba316bc1535a"
+    },
+    {
+      "path": "DnD/src/c23/part03.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64d2dcee8d2acfd0f7dd069656cd15ae824bf43d",
+      "sha256": "6b0f15288c10ba3c4985a464b52b89f1c7f7da2ee674728887f33d202a6d4fc3"
+    },
+    {
+      "path": "DnD/src/c23/part04.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34e2dee073e928b3903c8a6f19bb5b3cd211aa3d",
+      "sha256": "322c9170bce8cf5ca013599c7765d434afdd86ea5cd40333e6b2a69a94b5130b"
+    },
+    {
+      "path": "DnD/src/c23/part05.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9edaa86f44b9d8605c64890c2c35724ca702a875",
+      "sha256": "bbe8cfd221e36847a085d8f7e3b052240ff5e3d6d66aa8c5f94f4f701948d43d"
+    },
+    {
+      "path": "DnD/src/main.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba7132f9f3e109c279170259edbe1ce47b17fdaf",
+      "sha256": "a3f05056af8bf4153db78f96357c40e128ea53490718c9af1b1a5d9b22a5afe6"
+    },
+    {
+      "path": "DnD/src/rmal.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0cd59e86468822090f7b2c0a36fc8c4b32c0f67",
+      "sha256": "a2f514e8f84106614d0ee65f84126e64a7fe5b96562e2e4d2e63d296b1acde42"
+    },
+    {
+      "path": "DnD/tests/const_immutable_reject.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "034ad5da1ef481eca8796da13af94d3b0ad4c235",
+      "sha256": "cc5b95889aa4e003b3fe4437b74c7f2965e0614b6b0f507d850147c575c27112"
+    },
+    {
+      "path": "DnD/tests/cpp_native_abi_test.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d6fbc6ec0472e4c0b730cfda89414e6dc3c77c1",
+      "sha256": "516653732198a5793fc067fdeb976d6849faf3a4021bf73b0edc34bfb7dedcbd"
+    },
+    {
+      "path": "DnD/tests/legacy.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30ce4bf3f2849090aacb6edbcd97d60ce361600c",
+      "sha256": "718ed316da33753a7a7b096fcff713e66173c57c41799d568fb4544f2f64f1d8"
+    },
+    {
+      "path": "DnD/tests/native_callback_test.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be9b7c6879e6dab2195cf5f71892bec1d4dfc878",
+      "sha256": "d3f70076a413b7ee106df918b026809544d1433c62e038142b69210133735646"
+    },
+    {
+      "path": "DnD/tests/recovered_surface.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e663ce496695d4f45553a2161f4f43977afd2ef",
+      "sha256": "0ac6f28da1f0905a21ff59264bb334d4d15060fbdecd301f3a3d776baade8bc2"
+    },
+    {
+      "path": "DnD/tests/test_w114_sign_normalization.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adac68797ccbbf9869b75ae12be02b9fa9dc4380",
+      "sha256": "becefbadf73ea54cf0bb5312b7533cfd4536d4070b1f0b8350f99a3074056cf4"
+    },
+    {
+      "path": "DnD/tests/typed_equality.rmal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05de5c7db6fe30c4da314e17cdda51c63583c303",
+      "sha256": "a0281524e4963fcf98a44faac89c0037a508363669bfc532532509caa11b6d70"
+    },
+    {
+      "path": "DnD/tests/verify_dynamic_rmal.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb4f8cbd73d86378ed21dcaad1ede850f321b2ca",
+      "sha256": "e39f0f9de1b86fe9ee6510410870cac2440186042ce8c9130525397bb9b2eb4d"
+    },
+    {
+      "path": "DnD/tests/verify_w114_sign_normalization.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84cfb10381fd0c9c59f49d94b1d37e0abec80821",
+      "sha256": "e4abfa95e57eb8a948cdf2e82c79b3200be2b34cc80d2d4cb5cc3c348377243c"
+    },
+    {
+      "path": "EXPORT_DEPENDENCIES.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8eba26fc4812f5994c4f6cd6a15ae2d41d4dff8",
+      "sha256": "1d873ad0ce5ffcaed007c7c3ea47ab21fd91b236d05107130c4646f06d06656b"
+    },
+    {
+      "path": "EXPORT_EXCLUSIONS.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "989811995f9e8f05c5387803572506a2a2730d3f",
+      "sha256": "da0c382218a99a40e4744568021f5c604f387840e4313c36c348d7f4d0223161"
+    },
+    {
+      "path": "EXPORT_PROVENANCE.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b4581593c09a6e0b7390edeb70df8e77997b582",
+      "sha256": "b554065efd069f4135d35213d40163ffc4f867649f77a27c1075a4dd977cbc66"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e39ca80f3e2dbc0bacad169b4fceb21e53535eb",
+      "sha256": "b78e78538a130e56cc5b293fa485e7b757fbd68c590fb93bb1a14b4f1079e152"
+    },
+    {
+      "path": "VALIDATE.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4eeeaec2d383777d8c5209b4a4e4251ddb1f25b",
+      "sha256": "961a6db8ffad1771f3fc313549a1a7555ed1f7f758951488a2d36edbec3a2219"
+    },
+    {
+      "path": "VALIDATION_STATUS.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37e25412896791219ca108c0e14e7a790c1bf06b",
+      "sha256": "85ea0c1533e7204913bd2ecf010c8f204244da130b646a9dcfd9f90d784fe4fd"
+    },
+    {
+      "path": "validate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd14b4ead1b20497f54f88bde0bdff14100ef91c",
+      "sha256": "bc021c28d55f4415d6b8cfa868c23f4fd3e80ad5bbc7871e7835df6ca6b17d1a"
+    }
+  ],
+  "rights": "Original rights and exclusions retained without relicensing; EXPORT_EXCLUSIONS.json and source policies authoritative.",
+  "evidence": "Historical EXPORT_PROVENANCE.json describes preparation-stage status, not current approval. Source-reported counts remain source-reported. Saved VALIDATION_STATUS.json records preparation reruns and limitations; this publication verifies exact Git source tree and file hashes/modes, not a fresh full test run.",
+  "additional_files": [
+    "IMPORT_RECEIPT.json"
+  ],
+  "transport": "Exact tree built through six bounded create_tree batches because combined request exceeded the connector's 16 MiB request limit."
+}
