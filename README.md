@@ -1,5 +1,7 @@
 # RMAL
 
+> **Public page:** https://redogit.github.io/RMAL/ · **Main / About:** https://redogit.github.io/redogit/
+
 Language, compiler, native integrations, and existing RMAL project modules.
 
 This standalone export preserves original source paths and bytes. Necessary cross-project dependencies are copied with explicit provenance; ownership and historical evidence remain with their source projects.
